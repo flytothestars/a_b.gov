@@ -1,0 +1,347 @@
+@font-face {
+  font-family: "Releway Regular";
+  src: url("/fonts/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Releway Bold";
+  src: url("/fonts/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SFUI Display Regular";
+  src: url("/fonts/SFUIDisplay-Regular.ttf") format("truetype");
+}
+:root {
+  --font-regular: "Releway Regular";
+  --font-bold: "Releway Bold";
+  --font-extra-bold: "Montserrat Bold";
+  --sfui-font: "SFUI Display Regular";
+  /* base values */
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.125;
+  --input-icon-font-size: 22px;
+  /* type scale */
+  --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: 1.5em;
+  --text-xxl: 2.25em;
+  --text-xxxl: 2.5em;
+}
+
+.font-bold {
+  font-family: var(--font-bold) !important;
+}
+
+.font-black {
+  font-family: var(--font-extra-bold) !important;
+}
+
+.font-sm {
+  font-size: var(--text-sm) !important;
+}
+
+.font-md {
+  font-size: var(--text-md) !important;
+}
+
+.font-lg {
+  font-size: var(--text-lg);
+}
+
+.font-xl {
+  font-size: var(--text-xl);
+}
+
+.opacity-primary {
+  background: #4078e4;
+  background: rgba(64, 120, 228, 0.15) !important;
+}
+
+.opacity-white {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.grey-300 {
+  background-color: #c0c0c0;
+}
+
+.primary {
+  background-color: #4078e4;
+}
+
+.secondary {
+  background-color: #F1F3F8;
+}
+
+.green {
+  background-color: #6ca841;
+}
+
+.blue-200 {
+  background-color: #E8EEFA;
+}
+
+.dark-blue {
+  background-color: #1e3057;
+}
+
+.dark-slate-blue {
+  background-color: #5243AC;
+}
+
+.text-green {
+  color: #6ca841;
+}
+
+.text-blue {
+  color: #6389df;
+}
+
+.text-primary {
+  color: #4078e4;
+}
+
+.text-dark-blue {
+  color: #1e3057;
+}
+
+.text-black {
+  color: #2c2c2c;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-red {
+  color: #CF5C63;
+}
+
+.btn {
+  border-radius: 5px;
+  font-size: var(--text-sm);
+  line-height: var(--text-base-size);
+  font-family: var(--font-bold);
+  padding: 16px 28px;
+  width: fit-content;
+}
+.btn_lg {
+  padding: 20px 28px;
+  font-size: var(--text-base-size);
+  line-height: var(--text-md);
+}
+.btn.secondary {
+  border: 1px solid #c0c0c0;
+}
+
+.navbar__btn {
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .navbar__btn {
+    display: flex !important;
+  }
+}
+@media (max-width: 480px) {
+  .navbar__btn {
+    order: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .navbar__btn .btn {
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background: unset !important;
+    color: unset !important;
+  }
+}
+.inner-report-header {
+  position: relative !important;
+  padding-left: 4em !important;
+}
+.inner-report-header .v-expansion-panel-header__icon {
+  position: absolute;
+  left: 1em;
+}
+
+.report-government-icon {
+  width: 30px !important;
+  height: 30px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.v-toolbar__content, .v-toolbar__extension {
+  justify-content: center;
+}
+
+.auth-form__title {
+  font-size: 30px !important;
+  font-weight: bold;
+}
+.auth-form__btn {
+  background-color: #4078e4 !important;
+  padding: 20px 0 !important;
+}
+
+.inside-main {
+  background-color: #fff;
+  background-image: none !important;
+}
+
+.main {
+  padding-top: 70px !important;
+}
+
+.appbar-line {
+  padding-top: 0px;
+}
+
+.v-application ul, .v-application ol {
+  padding-left: 0 !important;
+}
+
+.breadcrumb-title {
+  padding-top: 30px;
+}
+
+.top-line__profile {
+  position: relative;
+}
+
+.profile__info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.profile__info-name {
+  font-size: 16px;
+  display: block;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.profile__info-img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 10em;
+  overflow: hidden;
+}
+.profile__info-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+.theme--light.v-data-table {
+  border: 1px solid #CFDAE9;
+  background-color: #fff;
+  box-shadow: none !important;
+  border-radius: 5px;
+}
+
+.v-data-table__wrapper td {
+  padding: 12px 16px !important;
+  border-color: #EBEFF2 !important;
+}
+
+.v-data-table-header {
+  padding: 10px 0;
+  border-color: #EBEFF2;
+}
+
+.theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr > th {
+  color: #2196F3 !important;
+}
+
+.theme--light.v-data-table .v-data-footer {
+  border-top: none !important;
+}
+
+.v-application .primary {
+  background-color: #6389df !important;
+}
+
+.profile {
+  position: relative;
+}
+
+.v-main__wrap {
+  background-color: #fff;
+  padding: 40px 30px;
+  margin: 0 30px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.v-toolbar__content, .v-toolbar__extension {
+  padding: 4px 30px !important;
+}
+
+.report-card {
+  min-width: 1300px;
+}
+.report-card .stiJsViewerPage {
+  letter-spacing: 0em;
+}
+
+.report-container {
+  min-width: 1200px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1650px) {
+  .v-main {
+    overflow-y: scroll;
+  }
+
+  .v-main__wrap {
+    min-width: 1400px;
+    position: initial;
+    min-inline-size: fit-content;
+  }
+}
+.news-bar-pad {
+  margin-top: 38px !important;
+}
+
+.business-chip-container {
+  position: relative !important;
+  padding-right: 2em;
+}
+
+.business-chip {
+  position: absolute !important;
+  right: -2em;
+  top: 0;
+}
+
+.highlight:not(.djs-connection) .djs-visual > :nth-child(1) {
+  fill: green !important;
+  /* color elements as green */
+}
+
+/*# sourceMappingURL=app.css.map */

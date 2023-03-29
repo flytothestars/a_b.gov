@@ -1,0 +1,1243 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CalculationMode>Interpretation</CalculationMode>
+  <Culture>ru-RU</Culture>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Almaty_Business_MFO Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>Almaty_Business_MFO</Alias>
+        <Key />
+        <Name>Almaty_Business_MFO</Name>
+        <PathData>C:\Daniyar\Projects\Stimulsoft Akimat\ТЗ\Almaty_Business_MFO.json</PathData>
+      </Almaty_Business_MFO>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <root Ref="3" type="DataTableSource" isKey="true">
+        <Alias>root</Alias>
+        <Columns isList="true" count="6">
+          <value>place,System.String</value>
+          <value>limit_amount,System.Decimal</value>
+          <value>work_place,System.Decimal</value>
+          <value>current_activity,System.String</value>
+          <value>tax,System.Decimal</value>
+          <value>planned_type_of_activity,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>6f3b3e4a05054c76820d19eead7505bf</Key>
+        <Name>root</Name>
+        <NameInSource>Almaty_Business_MFO.root</NameInSource>
+      </root>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>534dc11aca9f41c6ad7bd3b56094574a</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Dashboard1 Ref="4" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
+      <BackColor>Transparent</BackColor>
+      <Components isList="true" count="21">
+        <Text2 Ref="5" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;2;Solid</Border>
+          <ClientRectangle>1240,920,1780,108.89</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>47cedd5f62664d2c973c9ffd58b8e1b3</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text2</Name>
+          <Padding>3,3,3,3</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Left"&gt;&lt;b&gt;&lt;font-color="Black"&gt;Сумма и количество проектов по районам&lt;/font-color&gt;&lt;/b&gt;&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="6" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Текст</Text>
+            <Visible>False</Visible>
+          </Title>
+          <VertAlignment>Top</VertAlignment>
+        </Text2>
+        <Text5 Ref="7" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;2;Solid</Border>
+          <ClientRectangle>0,920,1240,108.89</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>80bf05eda71741d2adb1357adab3a4eb</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text5</Name>
+          <Padding>3,3,3,3</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Left"&gt;&lt;b&gt;&lt;font-color="Black"&gt;ТОП-5 отраслей по сумме выделенных средств и кол-ву проектов&lt;br /&gt;
+&lt;/b&gt;&lt;/font-color&gt;Тенге&lt;br /&gt;
+&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="8" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Текст</Text>
+            <Visible>False</Visible>
+          </Title>
+          <VertAlignment>Top</VertAlignment>
+        </Text5>
+        <Text3 Ref="9" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;2;Solid</Border>
+          <ClientRectangle>0,340,1240,100</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>fb2aff3a392c4951ab81f97bb4e53ed0</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text3</Name>
+          <Padding>3,3,3,3</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Left"&gt;&lt;b&gt;&lt;font-color="Black"&gt;Количество проектов по целям финансирования&lt;br /&gt;
+&lt;/b&gt;&lt;/font-color&gt;Единиц&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="10" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Текст</Text>
+            <Visible>False</Visible>
+          </Title>
+          <VertAlignment>Top</VertAlignment>
+        </Text3>
+        <Text22 Ref="11" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;2;Solid</Border>
+          <ClientRectangle>1240,0,580,100</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>5afe8a8a0a364faaae7141a340ea8fd8</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text22</Name>
+          <Padding>3,3,3,3</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Left"&gt;&lt;b&gt;&lt;font-color="Black"&gt;Рост налоговых поступлений&lt;br /&gt;
+&lt;/b&gt;&lt;/font-color&gt;Тенге&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="12" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Текст</Text>
+            <Visible>False</Visible>
+          </Title>
+          <VertAlignment>Top</VertAlignment>
+        </Text22>
+        <Text1 Ref="13" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;2;Solid</Border>
+          <ClientRectangle>640,0,600,100</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>1dc45165237e47b5aeb587b125c4660e</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text1</Name>
+          <Padding>3,3,3,3</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Left"&gt;&lt;b&gt;&lt;font-color="Black"&gt;Сумма проектов&lt;br /&gt;
+&lt;/b&gt;&lt;/font-color&gt;Тенге&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="14" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Текст</Text>
+            <Visible>False</Visible>
+          </Title>
+          <VertAlignment>Top</VertAlignment>
+        </Text1>
+        <Indicator1 Ref="15" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;1;Double</Border>
+          <ClientRectangle>0,80,500,260</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Segoe UI,24</Font>
+          <FontSizeMode>Value</FontSizeMode>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>f0d0f4723b2042dd9ee8abbdaa1a77f9</Guid>
+          <Icon>Briefcase</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="1">
+            <Item10 Ref="16" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElementCondition" isKey="true">
+              <BackColor>Transparent</BackColor>
+              <Condition>NotEqualTo</Condition>
+              <Font>Arial,8</Font>
+              <Icon>Archive</Icon>
+              <IconAlignment>Left</IconAlignment>
+              <IconColor>69, 98, 135</IconColor>
+              <Permissions>Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon</Permissions>
+              <TargetIconAlignment>None</TargetIconAlignment>
+              <TargetIconColor>68, 114, 196</TargetIconColor>
+              <TextColor>Black</TextColor>
+              <Value>-1</Value>
+            </Item10>
+          </IndicatorConditions>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator1</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <TextFormat Ref="17" type="CustomFormat" isKey="true">
+            <StringFormat>#,#</StringFormat>
+          </TextFormat>
+          <Title Ref="18" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,1.25,Bold,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Индикатор</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="19" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="20" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Count(root.limit_amount)</Expression>
+            <Key>7e435706f7ac4f34ab75b3bacbd96444</Key>
+            <Label>limit_amount</Label>
+          </Value>
+        </Indicator1>
+        <Text8 Ref="21" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;2;Solid</Border>
+          <ClientRectangle>0,0,640,100</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>5c3ba9daedc24294a6970548efa11b7e</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text8</Name>
+          <Padding>3,3,3,3</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Left"&gt;&lt;b&gt;&lt;font-color="Black"&gt;Количество проектов&lt;br /&gt;
+&lt;/b&gt;&lt;/font-color&gt;Единиц&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="22" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Текст</Text>
+            <Visible>False</Visible>
+          </Title>
+          <VertAlignment>Top</VertAlignment>
+        </Text8>
+        <Indicator3 Ref="23" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;1;Double</Border>
+          <ClientRectangle>2420,80,600,260</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Segoe UI,24</Font>
+          <FontSizeMode>Value</FontSizeMode>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>af562db9b422401c80435fc0016760ec</Guid>
+          <Icon>Money</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="1">
+            <Item13 Ref="24" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElementCondition" isKey="true">
+              <BackColor>Transparent</BackColor>
+              <Condition>NotEqualTo</Condition>
+              <Font>Arial,8</Font>
+              <Icon>Money</Icon>
+              <IconAlignment>Left</IconAlignment>
+              <IconColor>69, 98, 135</IconColor>
+              <Permissions>Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon</Permissions>
+              <TargetIconAlignment>None</TargetIconAlignment>
+              <TargetIconColor>68, 114, 196</TargetIconColor>
+              <TextColor>Black</TextColor>
+              <Value>-1</Value>
+            </Item13>
+          </IndicatorConditions>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator3</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <TextFormat Ref="25" type="CurrencyFormat" isKey="true">
+            <DecimalDigits>1</DecimalDigits>
+            <DecimalSeparator>,</DecimalSeparator>
+            <GroupSeparator> </GroupSeparator>
+            <NegativePattern>8</NegativePattern>
+            <PositivePattern>3</PositivePattern>
+            <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+            <Symbol> ₸</Symbol>
+          </TextFormat>
+          <Title Ref="26" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,1.25,Bold,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Индикатор</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="27" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="28" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(root.credit_amount)/Count(root.credit_amount)</Expression>
+            <Key>c62405d09bdf41bdad7dbbf9e66faf2b</Key>
+            <Label>credit_amount</Label>
+          </Value>
+        </Indicator3>
+        <Text9 Ref="29" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;2;Solid</Border>
+          <ClientRectangle>2420,0,600,100</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>cdb40309928b414dad73c28d6886f655</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text9</Name>
+          <Padding>3,3,3,3</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Left"&gt;&lt;b&gt;&lt;font-color="Black"&gt;Средний чек на проект&lt;br /&gt;
+&lt;/b&gt;&lt;/font-color&gt;Тенге&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="30" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Текст</Text>
+            <Visible>False</Visible>
+          </Title>
+          <VertAlignment>Top</VertAlignment>
+        </Text9>
+        <Indicator4 Ref="31" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;1;Double</Border>
+          <ClientRectangle>1820,80,600,260</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Segoe UI,24</Font>
+          <FontSizeMode>Value</FontSizeMode>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>600215b1882a4b23b12c8af6435188e0</Guid>
+          <Icon>Child</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="1">
+            <Item16 Ref="32" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElementCondition" isKey="true">
+              <BackColor>Transparent</BackColor>
+              <Condition>NotEqualTo</Condition>
+              <Font>Arial,8</Font>
+              <Icon>User</Icon>
+              <IconAlignment>Left</IconAlignment>
+              <IconColor>69, 98, 135</IconColor>
+              <Permissions>Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon</Permissions>
+              <TargetIconAlignment>None</TargetIconAlignment>
+              <TargetIconColor>68, 114, 196</TargetIconColor>
+              <TextColor>Black</TextColor>
+              <Value>-1</Value>
+            </Item16>
+          </IndicatorConditions>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator4</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <TextFormat Ref="33" type="CurrencyFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <DecimalSeparator>,</DecimalSeparator>
+            <GroupSeparator> </GroupSeparator>
+            <NegativePattern>8</NegativePattern>
+            <PositivePattern>3</PositivePattern>
+            <State>DecimalDigits, CurrencySymbol</State>
+            <Symbol />
+          </TextFormat>
+          <Title Ref="34" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,1.25,Bold,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Индикатор</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="35" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="36" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(root.work_place)</Expression>
+            <Key>c2b4b413376d4428b70bba1d93dd5224</Key>
+            <Label>work_place</Label>
+          </Value>
+        </Indicator4>
+        <Text10 Ref="37" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;2;Solid</Border>
+          <ClientRectangle>1820,0,600,100</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>c84bdf97abdc4785a4c817ec60e8cf85</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text10</Name>
+          <Padding>3,3,3,3</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Left"&gt;&lt;b&gt;&lt;font-color="Black"&gt;Созданные рабочие места&lt;br /&gt;
+&lt;/b&gt;&lt;/font-color&gt;Человек&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="38" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Текст</Text>
+            <Visible>False</Visible>
+          </Title>
+          <VertAlignment>Top</VertAlignment>
+        </Text10>
+        <Text6 Ref="39" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;2;Solid</Border>
+          <ClientRectangle>1240,340,1780,100</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>0bddc5765a3a4673bd00f80285da4a75</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text6</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Left"&gt;&lt;b&gt;&lt;font-color="Black"&gt;Средний чек на проект по районам&lt;br /&gt;
+&lt;/b&gt;&lt;/font-color&gt;Тенге&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="40" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Текст</Text>
+            <Visible>False</Visible>
+          </Title>
+          <VertAlignment>Top</VertAlignment>
+        </Text6>
+        <Indicator6 Ref="41" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;1;Double</Border>
+          <ClientRectangle>640,80,600,260</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Segoe UI,24</Font>
+          <FontSizeMode>Value</FontSizeMode>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>f0279a934152496cb33fd866ad49ae65</Guid>
+          <Icon>Money</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="1">
+            <Item20 Ref="42" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElementCondition" isKey="true">
+              <BackColor>Transparent</BackColor>
+              <Condition>NotEqualTo</Condition>
+              <Font>Arial,8</Font>
+              <Icon>Money</Icon>
+              <IconAlignment>Left</IconAlignment>
+              <IconColor>69, 98, 135</IconColor>
+              <Permissions>Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon</Permissions>
+              <TargetIconAlignment>None</TargetIconAlignment>
+              <TargetIconColor>68, 114, 196</TargetIconColor>
+              <TextColor>Black</TextColor>
+              <Value>-1</Value>
+            </Item20>
+          </IndicatorConditions>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator6</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <TextFormat Ref="43" type="CurrencyFormat" isKey="true">
+            <DecimalDigits>1</DecimalDigits>
+            <DecimalSeparator>,</DecimalSeparator>
+            <GroupSeparator> </GroupSeparator>
+            <NegativePattern>8</NegativePattern>
+            <PositivePattern>3</PositivePattern>
+            <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+            <Symbol> ₸</Symbol>
+          </TextFormat>
+          <Title Ref="44" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,1.25,Bold,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Индикатор</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="45" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="46" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(root.limit_amount)</Expression>
+            <Key>9254c56af8d244c69a09c1b64af55b89</Key>
+            <Label>limit_amount</Label>
+          </Value>
+        </Indicator6>
+        <Indicator7 Ref="47" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;1;Double</Border>
+          <ClientRectangle>0,80,640,260</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Segoe UI,24</Font>
+          <FontSizeMode>Value</FontSizeMode>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>7910098ad08f4011bd5d3b9fd52637ef</Guid>
+          <Icon>Briefcase</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="1">
+            <Item22 Ref="48" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElementCondition" isKey="true">
+              <BackColor>Transparent</BackColor>
+              <Condition>NotEqualTo</Condition>
+              <Font>Arial,8</Font>
+              <Icon>Archive</Icon>
+              <IconAlignment>Left</IconAlignment>
+              <IconColor>69, 98, 135</IconColor>
+              <Permissions>Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon</Permissions>
+              <TargetIconAlignment>None</TargetIconAlignment>
+              <TargetIconColor>68, 114, 196</TargetIconColor>
+              <TextColor>Black</TextColor>
+              <Value>-1</Value>
+            </Item22>
+          </IndicatorConditions>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator7</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <TextFormat Ref="49" type="CurrencyFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <DecimalSeparator>,</DecimalSeparator>
+            <GroupSeparator> </GroupSeparator>
+            <NegativePattern>8</NegativePattern>
+            <PositivePattern>3</PositivePattern>
+            <State>DecimalDigits, CurrencySymbol</State>
+            <Symbol />
+          </TextFormat>
+          <Title Ref="50" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,1.25,Bold,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Индикатор</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="51" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="52" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Count(root.limit_amount)</Expression>
+            <Key>7e435706f7ac4f34ab75b3bacbd96444</Key>
+            <Label>limit_amount</Label>
+          </Value>
+        </Indicator7>
+        <Indicator8 Ref="53" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;1;Double</Border>
+          <ClientRectangle>2420,80,600,260</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Segoe UI,24</Font>
+          <FontSizeMode>Value</FontSizeMode>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>fb41eb23b34e42ba897e91c312eb95c0</Guid>
+          <Icon>Money</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="1">
+            <Item24 Ref="54" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElementCondition" isKey="true">
+              <BackColor>Transparent</BackColor>
+              <Condition>NotEqualTo</Condition>
+              <Font>Arial,8</Font>
+              <Icon>Money</Icon>
+              <IconAlignment>Left</IconAlignment>
+              <IconColor>69, 98, 135</IconColor>
+              <Permissions>Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon</Permissions>
+              <TargetIconAlignment>None</TargetIconAlignment>
+              <TargetIconColor>68, 114, 196</TargetIconColor>
+              <TextColor>Black</TextColor>
+              <Value>-1</Value>
+            </Item24>
+          </IndicatorConditions>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator8</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <TextFormat Ref="55" type="CurrencyFormat" isKey="true">
+            <DecimalDigits>1</DecimalDigits>
+            <DecimalSeparator>,</DecimalSeparator>
+            <GroupSeparator> </GroupSeparator>
+            <NegativePattern>8</NegativePattern>
+            <PositivePattern>3</PositivePattern>
+            <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+            <Symbol> ₸</Symbol>
+          </TextFormat>
+          <Title Ref="56" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,1.25,Bold,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Индикатор</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="57" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="58" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(root.limit_amount)/Count(root.limit_amount)</Expression>
+            <Key>2005c6c21f4b4879bc7e01bb778956c8</Key>
+            <Label>limit_amount</Label>
+          </Value>
+        </Indicator8>
+        <Text11 Ref="59" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;2;Solid</Border>
+          <ClientRectangle>2420,0,600,100</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>149b862d98d641ce9347a71ca96d1f63</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text11</Name>
+          <Padding>3,3,3,3</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Left"&gt;&lt;b&gt;&lt;font-color="Black"&gt;Средний чек на проект&lt;br /&gt;
+&lt;/b&gt;&lt;/font-color&gt;Тенге&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="60" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Текст</Text>
+            <Visible>False</Visible>
+          </Title>
+          <VertAlignment>Top</VertAlignment>
+        </Text11>
+        <Chart2 Ref="61" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <Area Ref="62" type="Stimulsoft.Dashboard.Components.Chart.StiChartArea" isKey="true">
+            <InterlacingHor Ref="63" type="Stimulsoft.Dashboard.Components.Chart.StiHorChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingHor>
+            <InterlacingVert Ref="64" type="Stimulsoft.Dashboard.Components.Chart.StiVertChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingVert>
+          </Area>
+          <Arguments isList="true" count="1">
+            <Item27 Ref="65" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
+              <Expression>root.planned_type_of_activity</Expression>
+              <Key>1933551092504600b9e82486c3215028</Key>
+              <Label>planned_type_of_activity</Label>
+            </Item27>
+          </Arguments>
+          <BackColor>Transparent</BackColor>
+          <ChartConditions isList="true" count="0" />
+          <ClientRectangle>0,420,1240,500</ClientRectangle>
+          <CloseValues isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName>Стиль3</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <EndValues isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>d1849d6d9cc3476abe1f4bad2e685198</Guid>
+          <HighValues isList="true" count="0" />
+          <Labels Ref="66" type="Stimulsoft.Dashboard.Components.Chart.StiChartLabels" isKey="true">
+            <Font>Arial,16,Bold</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Style>Value</Style>
+          </Labels>
+          <Legend Ref="67" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegend" isKey="true">
+            <Labels Ref="68" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendLabels" isKey="true">
+              <Color>Black</Color>
+              <Font>Arial,12</Font>
+            </Labels>
+            <Title Ref="69" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendTitle" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,12,Bold</Font>
+            </Title>
+          </Legend>
+          <LowValues isList="true" count="0" />
+          <ManuallyEnteredChartMeter Ref="70" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            <Key>a14a121a9a554bba91417613edc3c790</Key>
+          </ManuallyEnteredChartMeter>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Marker Ref="71" type="Stimulsoft.Dashboard.Components.Chart.StiChartMarker" isKey="true" />
+          <Name>Chart2</Name>
+          <NegativeSeriesColors />
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ParetoSeriesColors />
+          <RoundValues>True</RoundValues>
+          <SeriesColors />
+          <Style>Custom</Style>
+          <Title Ref="72" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Диаграмма</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="73" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <TrendLines isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <UserViewStates isList="true" count="0" />
+          <ValueFormat Ref="74" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <DecimalSeparator>,</DecimalSeparator>
+            <GroupSeparator> </GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits, Abbreviation</State>
+          </ValueFormat>
+          <Values isList="true" count="1">
+            <Item28 Ref="75" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Count(root.limit_amount)</Expression>
+              <Key>d609bc7c5e464a71bf393b082c2d0635</Key>
+              <Label>limit_amount</Label>
+              <SeriesType>Doughnut</SeriesType>
+              <ShowNulls>Gap</ShowNulls>
+              <ShowZeros>Gap</ShowZeros>
+            </Item28>
+          </Values>
+          <Weights isList="true" count="0" />
+        </Chart2>
+        <Chart1 Ref="76" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <Area Ref="77" type="Stimulsoft.Dashboard.Components.Chart.StiChartArea" isKey="true">
+            <ColorEach>True</ColorEach>
+            <GridLinesHor Ref="78" type="Stimulsoft.Dashboard.Components.Chart.StiHorChartGridLines" isKey="true">
+              <Color>Transparent</Color>
+              <Visible>False</Visible>
+            </GridLinesHor>
+            <InterlacingHor Ref="79" type="Stimulsoft.Dashboard.Components.Chart.StiHorChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+              <Visible>True</Visible>
+            </InterlacingHor>
+            <InterlacingVert Ref="80" type="Stimulsoft.Dashboard.Components.Chart.StiVertChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingVert>
+            <XAxis Ref="81" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxis" isKey="true">
+              <Labels Ref="82" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Black</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="83" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="84" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxisTitle" isKey="true">
+                <Color>Black</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </XAxis>
+            <YAxis Ref="85" type="Stimulsoft.Dashboard.Components.Chart.StiYChartAxis" isKey="true">
+              <Labels Ref="86" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="87" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="88" type="Stimulsoft.Dashboard.Components.Chart.StiYChartAxisTitle" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </YAxis>
+          </Area>
+          <Arguments isList="true" count="1">
+            <Item30 Ref="89" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
+              <Expression>root.place</Expression>
+              <Key>42873359937d40c6926f6f1d78ec34e8</Key>
+              <Label>place</Label>
+            </Item30>
+          </Arguments>
+          <BackColor>Transparent</BackColor>
+          <ChartConditions isList="true" count="0" />
+          <ClientRectangle>1240,420,1780,500</ClientRectangle>
+          <CloseValues isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName>Стиль1</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <EndValues isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>bd5991678d4646839e37149fd4c86fa3</Guid>
+          <HighValues isList="true" count="0" />
+          <Labels Ref="90" type="Stimulsoft.Dashboard.Components.Chart.StiChartLabels" isKey="true">
+            <AxisPosition>OutsideEnd</AxisPosition>
+            <Font>Arial,8</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Style>Value</Style>
+          </Labels>
+          <Legend Ref="91" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegend" isKey="true">
+            <Labels Ref="92" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendLabels" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,8</Font>
+            </Labels>
+            <Title Ref="93" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendTitle" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,12,Bold</Font>
+            </Title>
+          </Legend>
+          <LowValues isList="true" count="0" />
+          <ManuallyEnteredChartMeter Ref="94" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            <Key>5e54a6fa7bdd469c9a08cf5d45a54ec6</Key>
+          </ManuallyEnteredChartMeter>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Marker Ref="95" type="Stimulsoft.Dashboard.Components.Chart.StiChartMarker" isKey="true" />
+          <Name>Chart1</Name>
+          <NegativeSeriesColors />
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ParetoSeriesColors />
+          <RoundValues>True</RoundValues>
+          <SeriesColors />
+          <Style>Custom</Style>
+          <Title Ref="96" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Диаграмма</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="97" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true">
+            <Count>8</Count>
+            <Mode>Top</Mode>
+            <ShowOthers>False</ShowOthers>
+          </TopN>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <TrendLines isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <UserViewStates isList="true" count="0" />
+          <ValueFormat Ref="98" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <DecimalSeparator>,</DecimalSeparator>
+            <GroupSeparator> </GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits, Abbreviation</State>
+          </ValueFormat>
+          <Values isList="true" count="1">
+            <Item31 Ref="99" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(root.limit_amount)</Expression>
+              <Key>ae823df5815148b7831a4972e7c07784</Key>
+              <Label>limit_amount</Label>
+              <SeriesType>ClusteredBar</SeriesType>
+              <ShowNulls>Gap</ShowNulls>
+              <ShowZeros>Gap</ShowZeros>
+            </Item31>
+          </Values>
+          <Weights isList="true" count="0" />
+        </Chart1>
+        <Table1 Ref="100" type="Stimulsoft.Dashboard.Components.Table.StiTableElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,1020,1240,400</ClientRectangle>
+          <Columns isList="true" count="3">
+            <Item33 Ref="101" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
+              <Expression>root.planned_type_of_activity</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <Key>d33180b3e6d94658907ac7e5027611ec</Key>
+              <Label>Отрасль</Label>
+              <Size Ref="102" type="Stimulsoft.Report.Dashboard.StiTableColumnSize" isKey="true" />
+            </Item33>
+            <Item34 Ref="103" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Count(root.limit_amount)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Center</HorAlignment>
+              <Key>8ff55eb3177d4c30b3a4c13fe3e14b3e</Key>
+              <Label>Количество</Label>
+              <TextFormat Ref="104" type="CustomFormat" isKey="true">
+                <StringFormat>d</StringFormat>
+              </TextFormat>
+            </Item34>
+            <Item35 Ref="105" type="Stimulsoft.Dashboard.Components.Table.StiDataBarsColumn" isKey="true">
+              <Expression>Sum(root.limit_amount)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Left</HorAlignment>
+              <Key>1b9940fe045445fc98fd80bc1a35027f</Key>
+              <Label>Сумма</Label>
+              <TextFormat Ref="106" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>1</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>8</NegativePattern>
+                <PositivePattern>3</PositivePattern>
+                <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+                <Symbol>₸</Symbol>
+              </TextFormat>
+            </Item35>
+          </Columns>
+          <CustomStyleName>Стиль2</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <FooterFont>Arial,10</FooterFont>
+          <FooterForeColor>Transparent</FooterForeColor>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>9aee3cdb88d442929c4e7aa4887eb742</Guid>
+          <HeaderFont>Arial,10</HeaderFont>
+          <HeaderForeColor>Transparent</HeaderForeColor>
+          <Margin>3,3,3,3</Margin>
+          <Name>Table1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Style>Custom</Style>
+          <TableConditions isList="true" count="0" />
+          <Title Ref="107" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Таблица</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+          <UserSorts isList="true" count="1">
+            <Item36 Ref="108" type="Stimulsoft.Data.Engine.StiDataSortRule" isKey="true">
+              <Direction>Descending</Direction>
+              <Key>1b9940fe045445fc98fd80bc1a35027f</Key>
+            </Item36>
+          </UserSorts>
+        </Table1>
+        <Table2 Ref="109" type="Stimulsoft.Dashboard.Components.Table.StiTableElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>1240,1020,1780,400</ClientRectangle>
+          <Columns isList="true" count="3">
+            <Item38 Ref="110" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
+              <Expression>root.place</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <Key>5fe53121bd354677b46a2c31916a7e74</Key>
+              <Label>Место реализации</Label>
+              <Size Ref="111" type="Stimulsoft.Report.Dashboard.StiTableColumnSize" isKey="true" />
+            </Item38>
+            <Item39 Ref="112" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Count(root.limit_amount)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Center</HorAlignment>
+              <Key>9f4ca27b27ac431d9eb1d3634014bfa1</Key>
+              <Label>Количество</Label>
+              <TextFormat Ref="113" type="CustomFormat" isKey="true">
+                <StringFormat>d</StringFormat>
+              </TextFormat>
+            </Item39>
+            <Item40 Ref="114" type="Stimulsoft.Dashboard.Components.Table.StiDataBarsColumn" isKey="true">
+              <Expression>Sum(root.limit_amount)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Left</HorAlignment>
+              <Key>0367d71ebcff45e890fd3d40355ce731</Key>
+              <Label>Сумма гарантирования</Label>
+              <TextFormat Ref="115" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>1</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>8</NegativePattern>
+                <PositivePattern>3</PositivePattern>
+                <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+                <Symbol> ₸</Symbol>
+              </TextFormat>
+            </Item40>
+          </Columns>
+          <CustomStyleName>Стиль2</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <FooterFont>Arial,10</FooterFont>
+          <FooterForeColor>Transparent</FooterForeColor>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>f83a2ba8407141139d50b8de632aecaf</Guid>
+          <HeaderFont>Arial,10</HeaderFont>
+          <HeaderForeColor>Transparent</HeaderForeColor>
+          <Margin>3,3,3,3</Margin>
+          <Name>Table2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Style>Custom</Style>
+          <TableConditions isList="true" count="0" />
+          <Title Ref="116" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Таблица</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+          <UserSorts isList="true" count="1">
+            <Item41 Ref="117" type="Stimulsoft.Data.Engine.StiDataSortRule" isKey="true">
+              <Direction>Descending</Direction>
+              <Key>0367d71ebcff45e890fd3d40355ce731</Key>
+            </Item41>
+          </UserSorts>
+        </Table2>
+        <Indicator2 Ref="118" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <Border>None;Black;1;Double</Border>
+          <ClientRectangle>1240,80,580,260</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Segoe UI,24</Font>
+          <FontSizeMode>Value</FontSizeMode>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>bd9d20e3206f470b85246cd4af0f28f2</Guid>
+          <Icon>Money</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="1">
+            <Item43 Ref="119" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElementCondition" isKey="true">
+              <BackColor>Transparent</BackColor>
+              <Condition>NotEqualTo</Condition>
+              <Font>Arial,8</Font>
+              <Icon>Money</Icon>
+              <IconAlignment>Left</IconAlignment>
+              <IconColor>69, 98, 135</IconColor>
+              <Permissions>Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon</Permissions>
+              <TargetIconAlignment>None</TargetIconAlignment>
+              <TargetIconColor>68, 114, 196</TargetIconColor>
+              <TextColor>Black</TextColor>
+              <Value>-1</Value>
+            </Item43>
+          </IndicatorConditions>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator2</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <TextFormat Ref="120" type="CurrencyFormat" isKey="true">
+            <DecimalDigits>1</DecimalDigits>
+            <DecimalSeparator>,</DecimalSeparator>
+            <GroupSeparator> </GroupSeparator>
+            <NegativePattern>8</NegativePattern>
+            <PositivePattern>3</PositivePattern>
+            <State>DecimalDigits, CurrencySymbol, Abbreviation</State>
+            <Symbol> ₸</Symbol>
+          </TextFormat>
+          <Title Ref="121" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,1.25,Bold,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Индикатор</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="122" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="123" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(root.tax)</Expression>
+            <Key>92e547ed000b498890b663c47eae97d6</Key>
+            <Label>tax</Label>
+          </Value>
+        </Indicator2>
+      </Components>
+      <Expressions isList="true" count="0" />
+      <Guid>2c4e4467135b4473829f57bf5b651a53</Guid>
+      <Height>1423</Height>
+      <Name>Dashboard1</Name>
+      <Report isRef="0" />
+      <Width>3020</Width>
+    </Dashboard1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/21/2021 9:29:29 AM</ReportChanged>
+  <ReportCreated>11/2/2021 3:00:50 PM</ReportCreated>
+  <ReportFile>AlmatyBusinessMFO.mrt</ReportFile>
+  <ReportGuid>17b6149340ed4f3bb1b2e40109e89139</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2022.1.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="3">
+    <Стиль2 Ref="124" type="Stimulsoft.Report.StiTableStyle" isKey="true">
+      <AlternatingDataColor>242, 242, 242</AlternatingDataColor>
+      <AlternatingDataForeground>34, 34, 34</AlternatingDataForeground>
+      <BackColor>White</BackColor>
+      <Conditions isList="true" count="0" />
+      <DataColor>White</DataColor>
+      <DataForeground>Black</DataForeground>
+      <FooterColor>180, 35, 159, 217</FooterColor>
+      <FooterForeground>White</FooterForeground>
+      <GridColor>White</GridColor>
+      <HeaderColor>54, 96, 146</HeaderColor>
+      <HeaderForeground>White</HeaderForeground>
+      <HotHeaderColor>Transparent</HotHeaderColor>
+      <Name>Стиль2</Name>
+      <SelectedDataColor>36, 64, 97</SelectedDataColor>
+      <SelectedDataForeground>White</SelectedDataForeground>
+    </Стиль2>
+    <Стиль1 Ref="125" type="Stimulsoft.Report.StiChartStyle" isKey="true">
+      <AxisLabelsColor>140, 140, 140</AxisLabelsColor>
+      <AxisLineColor>140, 140, 140</AxisLineColor>
+      <AxisTitleColor>140, 140, 140</AxisTitleColor>
+      <BasicStyleColor>White</BasicStyleColor>
+      <Brush>GradientBrush,[255:255:255],[205:205:205],0</Brush>
+      <ChartAreaBorderColor>Transparent</ChartAreaBorderColor>
+      <ChartAreaBrush>[255:255:255]</ChartAreaBrush>
+      <Conditions isList="true" count="0" />
+      <GridLinesHorColor>50, 105, 105, 105</GridLinesHorColor>
+      <GridLinesVertColor>50, 105, 105, 105</GridLinesVertColor>
+      <InterlacingHorBrush>[10:155:155:155]</InterlacingHorBrush>
+      <InterlacingVertBrush>[10:155:155:155]</InterlacingVertBrush>
+      <LegendBorderColor>Transparent</LegendBorderColor>
+      <LegendBrush>[255:255:255]</LegendBrush>
+      <LegendLabelsColor>140, 140, 140</LegendLabelsColor>
+      <LegendTitleColor>DimGray</LegendTitleColor>
+      <Name>Стиль1</Name>
+      <SeriesLabelsBorderColor>Transparent</SeriesLabelsBorderColor>
+      <SeriesLabelsBrush>[119:255:255:255]</SeriesLabelsBrush>
+      <SeriesLabelsColor>50, 58, 69</SeriesLabelsColor>
+      <SeriesLabelsLineColor>DimGray</SeriesLabelsLineColor>
+      <StyleColors>[54:96:146], [61:111:169], [80:131:191], [47:88:137]</StyleColors>
+      <TrendLineColor>DimGray</TrendLineColor>
+    </Стиль1>
+    <Стиль3 Ref="126" type="Stimulsoft.Report.StiChartStyle" isKey="true">
+      <AxisLabelsColor>140, 140, 140</AxisLabelsColor>
+      <AxisLineColor>140, 140, 140</AxisLineColor>
+      <AxisTitleColor>140, 140, 140</AxisTitleColor>
+      <BasicStyleColor>White</BasicStyleColor>
+      <Brush>GradientBrush,[255:255:255],[205:205:205],0</Brush>
+      <ChartAreaBorderColor>Transparent</ChartAreaBorderColor>
+      <ChartAreaBrush>[255:255:255]</ChartAreaBrush>
+      <Conditions isList="true" count="0" />
+      <GridLinesHorColor>50, 105, 105, 105</GridLinesHorColor>
+      <GridLinesVertColor>50, 105, 105, 105</GridLinesVertColor>
+      <InterlacingHorBrush>[10:155:155:155]</InterlacingHorBrush>
+      <InterlacingVertBrush>[10:155:155:155]</InterlacingVertBrush>
+      <LegendBorderColor>Transparent</LegendBorderColor>
+      <LegendBrush>[255:255:255]</LegendBrush>
+      <LegendLabelsColor>140, 140, 140</LegendLabelsColor>
+      <LegendTitleColor>DimGray</LegendTitleColor>
+      <Name>Стиль3</Name>
+      <SeriesLabelsBorderColor>Transparent</SeriesLabelsBorderColor>
+      <SeriesLabelsBrush>EmptyBrush</SeriesLabelsBrush>
+      <SeriesLabelsColor>White</SeriesLabelsColor>
+      <SeriesLabelsLineColor>DimGray</SeriesLabelsLineColor>
+      <StyleColors>[54:96:146], [47:115:200], [155:184:220]</StyleColors>
+      <TrendLineColor>DimGray</TrendLineColor>
+    </Стиль3>
+  </Styles>
+</StiSerializer>

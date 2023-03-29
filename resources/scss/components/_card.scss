@@ -1,0 +1,103 @@
+.wall-card {
+    @include standard-radius;
+    padding: 33px 53px 33px 33px;
+    display: block;
+    border: none;
+    color: $bold-dark;
+    text-decoration: none;
+
+    &:hover {
+        color: $bold-dark;
+        padding: 31px 51px 31px 31px;
+        border: 2px solid $secondary-blue;
+
+        .wall-card {
+            &__action {
+                background-color: $secondary-blue;
+                color: white;
+            }
+        }
+    }
+
+    &__action {
+        border-color: $secondary-blue;
+        color: $secondary-blue;
+    }
+
+    &__title {
+        @include bold-font-xl;
+    }
+
+    &__text {
+        @include font-md;
+    }
+}
+
+@media (max-width: 480px) {
+    .wall-card {
+        padding: 27px 15px;
+
+        &__action {
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+.mod-header {
+    height: 120px;
+}
+
+.item-card {
+    border: none;
+    color: $bold-dark;
+
+    //img {
+    //    min-height: 40%;
+    //}
+
+    .card-body {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-img-top {
+        height: 250px;
+    }
+
+    &__header {
+        @include bold-font-md;
+    }
+
+    &__lead {
+        @include font-sm;
+        height: 60px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &_financing-program {
+        .item-card__action {
+            @include bg-opacity($secondary-blue, 0.15);
+            color: $secondary-blue;
+        }
+    }
+
+    &:hover {
+        @include standard-shadow;
+
+        a {
+            color: $bold-dark;
+        }
+    }
+
+    &_financing-program:hover {
+        .item-card__action {
+            @include bg-opacity($secondary-blue, 1);
+            color: white;
+        }
+    }
+}

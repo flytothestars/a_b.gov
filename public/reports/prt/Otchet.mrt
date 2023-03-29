@@ -1,0 +1,996 @@
+{
+  "ReportVersion": "2022.1.2.0",
+  "ReportGuid": "074a1d0890e34b5dbdef3f83910a057e",
+  "ReportName": "Report",
+  "ReportAlias": "Report",
+  "ReportCreated": "/Date(0+0600)/",
+  "ReportChanged": "/Date(1640259546015+0600)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "PreviewSettings": 268435455,
+  "Culture": "ru-RU",
+  "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class Report : Stimulsoft.Report.StiReport\r\n    {\r\n        public Report()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
+  "Styles": {
+    "0": {
+      "Ident": "StiChartStyle",
+      "Name": "Стиль1",
+      "Border": ";;;;;;;solid:Black",
+      "Brush": "gradient:255,255,255:205,205,205:",
+      "ChartAreaBrush": "solid:255,255,255",
+      "ChartAreaBorderColor": "Transparent",
+      "SeriesLabelsBrush": "empty",
+      "SeriesLabelsColor": "50,58,69",
+      "SeriesLabelsLineColor": "DimGray",
+      "SeriesLabelsBorderColor": "Transparent",
+      "TrendLineColor": "DimGray",
+      "LegendBrush": "solid:255,255,255",
+      "LegendBorderColor": "Transparent",
+      "InterlacingHorBrush": "solid:10,155,155,155",
+      "InterlacingVertBrush": "solid:10,155,155,155",
+      "GridLinesHorColor": "50,105,105,105",
+      "GridLinesVertColor": "50,105,105,105",
+      "StyleColors": {
+        "0": "54,96,146",
+        "1": "61,111,169",
+        "2": "80,131,191",
+        "3": "47,88,137"
+      },
+      "BasicStyleColor": "White"
+    },
+    "1": {
+      "Ident": "StiTableStyle",
+      "Name": "Стиль2",
+      "BackColor": "White",
+      "DataForeground": "Black",
+      "SelectedDataColor": "36,64,97",
+      "AlternatingDataColor": "242,242,242",
+      "HeaderColor": "54,96,146",
+      "FooterColor": "180,35,159,217",
+      "FooterForeground": "White",
+      "GridColor": "White"
+    },
+    "2": {
+      "Ident": "StiChartStyle",
+      "Name": "Стиль1Copy1",
+      "Border": ";;;;;;;solid:Black",
+      "Brush": "gradient:255,255,255:205,205,205:",
+      "ChartAreaBrush": "solid:255,255,255",
+      "ChartAreaBorderColor": "Transparent",
+      "SeriesLabelsBrush": "empty",
+      "SeriesLabelsColor": "255,255,255",
+      "SeriesLabelsLineColor": "DimGray",
+      "SeriesLabelsBorderColor": "Transparent",
+      "TrendLineColor": "DimGray",
+      "LegendBrush": "solid:255,255,255",
+      "LegendBorderColor": "Transparent",
+      "InterlacingHorBrush": "solid:10,155,155,155",
+      "InterlacingVertBrush": "solid:10,155,155,155",
+      "GridLinesHorColor": "50,105,105,105",
+      "GridLinesVertColor": "50,105,105,105",
+      "StyleColors": {
+        "0": "54,96,146",
+        "1": "61,111,169",
+        "2": "80,131,191",
+        "3": "47,88,137"
+      },
+      "BasicStyleColor": "White"
+    }
+  },
+  "ReferencedAssemblies": {
+    "0": "System.Dll",
+    "1": "System.Drawing.Dll",
+    "2": "System.Windows.Forms.Dll",
+    "3": "System.Data.Dll",
+    "4": "System.Xml.Dll",
+    "5": "Stimulsoft.Controls.Dll",
+    "6": "Stimulsoft.Base.Dll",
+    "7": "Stimulsoft.Report.Dll"
+  },
+  "Dictionary": {
+    "Resources": {
+      "0": {
+        "Name": "Otchet",
+        "Alias": "Otchet",
+        "Type": "Xml",
+        "Image": "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"
+      }
+    },
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "appeal",
+        "Alias": "appeal",
+        "Key": "70204475bd2640718cc4756b1e833891",
+        "Columns": {
+          "0": {
+            "Name": "district",
+            "Index": -1,
+            "NameInSource": "district",
+            "Alias": "district",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "category",
+            "Index": -1,
+            "NameInSource": "category",
+            "Alias": "category",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "industry",
+            "Index": -1,
+            "NameInSource": "industry",
+            "Alias": "industry",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "appeal_type",
+            "Index": -1,
+            "NameInSource": "appeal_type",
+            "Alias": "appeal_type",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "type",
+            "Index": -1,
+            "NameInSource": "type",
+            "Alias": "type",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "business_name",
+            "Index": -1,
+            "NameInSource": "business_name",
+            "Alias": "business_name",
+            "Type": "System.Decimal"
+          }
+        },
+        "NameInSource": "Otchet.appeal"
+      },
+      "1": {
+        "Ident": "StiDataTableSource",
+        "Name": "total_statistics_by_districts",
+        "Alias": "total_statistics_by_districts",
+        "Key": "6a9e29189f1c49298ada165c937ea4fe",
+        "Columns": {
+          "0": {
+            "Name": "district_name",
+            "Index": -1,
+            "NameInSource": "district_name",
+            "Alias": "district_name",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "value",
+            "Index": -1,
+            "NameInSource": "value",
+            "Alias": "value",
+            "Type": "System.Decimal"
+          },
+          "3": {
+            "Name": "value_with_needs",
+            "Index": -1,
+            "NameInSource": "value_with_needs",
+            "Alias": "value_with_needs",
+            "Type": "System.Decimal"
+          },
+          "4": {
+            "Name": "value_without_needs",
+            "Index": -1,
+            "NameInSource": "value_without_needs",
+            "Alias": "value_without_needs",
+            "Type": "System.Decimal"
+          }
+        },
+        "NameInSource": "Otchet.total_statistics_by_districts"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiJsonDatabase",
+        "Name": "Otchet",
+        "Alias": "Otchet",
+        "PathData": "D:\\Daniyar\\Work\\Projects\\Stimulsoft Akimat\\ТЗ\\Otchet.json"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiDashboard",
+      "Name": "Dashboard1",
+      "Guid": "2c4e4467135b4473829f57bf5b651a53",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiChartElement",
+          "Name": "Chart1",
+          "Guid": "d377057b817e4550985be5bf2e3908f7",
+          "ClientRectangle": "0,86.12,800,393.88",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "be7f7062919f4c98b819e323da9b3d39",
+              "Expression": "Sum(appeal.business_name)",
+              "Label": "business_name",
+              "SeriesType": "Pie"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "709eb694c6ef4f859ca1a4f73a972b66",
+              "Expression": "appeal.type",
+              "Label": "type"
+            }
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "Кол-во проектов по целям финансирования",
+            "Visible": false,
+            "Font": "Calibri;;Bold;",
+            "HorAlignment": "Center"
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "4f55aac0dd84d8f96f4edcd15e5f185f"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, CurrencySymbol",
+            "PositivePattern": 3,
+            "Symbol": ""
+          },
+          "Legend": {
+            "Title": {
+              "Font": ";10;;"
+            },
+            "Labels": {
+              "Font": ";12;;",
+              "Color": "Black"
+            }
+          },
+          "Area": {
+            "GridLinesHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Font": ";16;;",
+            "Position": "Center",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1Copy1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "1": {
+          "Ident": "StiTextElement",
+          "Name": "Text3",
+          "Guid": "9e996465821b4bb2b42c9d0581ef4051",
+          "ClientRectangle": "0,0,800,104.08",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "ForeColor": "Black",
+          "Text": "<font face=\"Segoe UI\" size=\"14\"><text-align=\"Left\"><font-color=\"Black\">Общее количество потребностей<br />\r\n</font-color></text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "2": {
+          "Ident": "StiTextElement",
+          "Name": "Text2",
+          "Guid": "af4e854c976c419fa35bafc432cbca59",
+          "ClientRectangle": "800,0,1040,110.2",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "ForeColor": "Black",
+          "Text": "<font face=\"Segoe UI\" size=\"14\"><text-align=\"Left\"><font-color=\"Black\">Субъекты бизнеса</font-color></text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "3": {
+          "Ident": "StiTextElement",
+          "Name": "Text7",
+          "Guid": "fc06725081b146928c8511843555f11e",
+          "ClientRectangle": "0,480,800,100",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "ForeColor": "Black",
+          "Text": "<font face=\"Segoe UI\" size=\"14\"><text-align=\"Left\"><font-color=\"Black\">Общая статистика по районам Алматы</font-color></text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "4": {
+          "Ident": "StiTextElement",
+          "Name": "Text10",
+          "Guid": "31dcbef58b984d6ba618ca6647466fe4",
+          "ClientRectangle": "1840,0,1180,110.2",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "ForeColor": "Black",
+          "Text": "<font face=\"Segoe UI\" size=\"14\"><text-align=\"Left\">Статистика по районам</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "5": {
+          "Ident": "StiTableElement",
+          "Name": "Table1",
+          "Guid": "58b68dccbfff492199cdfed0dcf13901",
+          "ClientRectangle": "1840,87.76,1180,632.24",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Columns": {
+            "0": {
+              "Ident": "DimensionColumn",
+              "Key": "a260ab4a860d41f3a4d9d413e76689f2",
+              "Expression": "total_statistics_by_districts.district_name",
+              "Label": "Район",
+              "DashboardInteraction": {
+                "Ident": "TableColumn",
+                "OnHover": "None",
+                "OnClick": "None",
+                "HyperlinkDestination": "NewTab"
+              }
+            },
+            "1": {
+              "Ident": "DataBarsColumn",
+              "Key": "997ae40a1b1f4b6bb2f8d39c8bc6057f",
+              "Expression": "Sum(total_statistics_by_districts.value_with_needs)",
+              "Label": "С потребностями",
+              "TextFormat": {
+                "Ident": "StiCurrencyFormatService",
+                "NegativePattern": 8,
+                "DecimalSeparator": ",",
+                "DecimalDigits": 0,
+                "GroupSeparator": " ",
+                "State": "DecimalDigits, CurrencySymbol",
+                "PositivePattern": 3,
+                "Symbol": ""
+              },
+              "DashboardInteraction": {
+                "Ident": "TableColumn",
+                "OnHover": "None",
+                "OnClick": "ApplyFilter",
+                "HyperlinkDestination": "NewTab"
+              },
+              "HorAlignment": "Right"
+            },
+            "2": {
+              "Ident": "DataBarsColumn",
+              "Key": "2cd027d938e1488b9895da2004f2011e",
+              "Expression": "Sum(total_statistics_by_districts.value_without_needs)",
+              "Label": "Без потребностей",
+              "TextFormat": {
+                "Ident": "StiCurrencyFormatService",
+                "NegativePattern": 8,
+                "DecimalSeparator": ",",
+                "DecimalDigits": 0,
+                "GroupSeparator": " ",
+                "State": "DecimalDigits, CurrencySymbol",
+                "PositivePattern": 3,
+                "Symbol": ""
+              },
+              "DashboardInteraction": {
+                "Ident": "TableColumn",
+                "OnHover": "None",
+                "OnClick": "ApplyFilter",
+                "HyperlinkDestination": "NewTab"
+              },
+              "HorAlignment": "Right"
+            }
+          },
+          "UserSorts": {
+            "0": {
+              "Key": "997ae40a1b1f4b6bb2f8d39c8bc6057f",
+              "Direction": "Descending"
+            }
+          },
+          "DataFilters": {
+            "0": {
+              "Key": "6ea8e3c401964fccbab8aa03b8a42f0c",
+              "Path": "total_statistics_by_districts.district_name",
+              "Condition": "NotEqualTo",
+              "Value": "Район не указан"
+            }
+          },
+          "HeaderFont": ";10;;",
+          "FooterFont": ";10;;",
+          "Font": "Segoe UI;;;",
+          "Title": {
+            "Text": "Таблица",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Table",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Style": "Custom",
+          "SizeMode": "Fit",
+          "CrossFiltering": false,
+          "CustomStyleName": "Стиль2",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "6": {
+          "Ident": "StiTextElement",
+          "Name": "Text1",
+          "Guid": "ecaacfb008394ea08dc37d1606758ce5",
+          "ClientRectangle": "0,960,800,100",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "ForeColor": "Black",
+          "Text": "<font face=\"Segoe UI\" size=\"14\"><text-align=\"Left\"><font-color=\"Black\">Общая статистика потребностей по направлениям</font-color></text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "7": {
+          "Ident": "StiTextElement",
+          "Name": "Text4",
+          "Guid": "55829da337af41f79d72ddf60a0410e4",
+          "ClientRectangle": "800,720,1040,100",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "ForeColor": "Black",
+          "Text": "<font face=\"Segoe UI\" size=\"14\"><text-align=\"Left\"><font-color=\"Black\">Общая статистика потребностей по категориям</font-color></text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "8": {
+          "Ident": "StiTextElement",
+          "Name": "Text5",
+          "Guid": "789a19c6eed84b26a3fc6abfbd7eef28",
+          "ClientRectangle": "1840,720,1180,100",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "ForeColor": "Black",
+          "Text": "<font face=\"Segoe UI\" size=\"14\"><text-align=\"Left\"><font-color=\"Black\">Общая статистика потребностей по отраслям</font-color></text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "9": {
+          "Ident": "StiChartElement",
+          "Name": "Chart2",
+          "Guid": "39dc9e8f13bc451088a0027e18ac7586",
+          "ClientRectangle": "800,85.72,1040,632.24",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "d5400bd88a0e4bef8238c87be6607c1e",
+              "Expression": "Sum(total_statistics_by_districts.value)",
+              "Label": "value",
+              "SeriesType": "Pie",
+              "ShowZeros": "Gap",
+              "ShowNulls": "Gap"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "6cacc9e9fae64ac6a9b1587405fe68f2",
+              "Expression": "total_statistics_by_districts.name",
+              "Label": "name"
+            }
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false
+          },
+          "Title": {
+            "Text": "Диаграмма",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "47aee2a085e037675c53bad20c063740"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, CurrencySymbol",
+            "PositivePattern": 3,
+            "Symbol": ""
+          },
+          "Area": {
+            "GridLinesHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Font": ";16;;",
+            "Position": "Center",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CrossFiltering": false,
+          "CustomStyleName": "Стиль1Copy1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "10": {
+          "Ident": "StiChartElement",
+          "Name": "Chart4",
+          "Guid": "51a0a7c23c344b38be3700c6fff5f6cb",
+          "ClientRectangle": "0,1020,800,400",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "1f2f5e3c178f43eab393187ba28b5afd",
+              "Expression": "Sum(appeal.business_name)",
+              "Label": "business_name",
+              "SeriesType": "Pie"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "9919483f17304c31a915ac5fed101211",
+              "Expression": "appeal.appeal_type",
+              "Label": "appeal_type"
+            }
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "Диаграмма",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "65e2ae3c0736ac7c6de920349ff75c85"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, CurrencySymbol",
+            "PositivePattern": 3,
+            "Symbol": ""
+          },
+          "Area": {
+            "GridLinesHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Font": ";16;;",
+            "Position": "Center",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1Copy1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "11": {
+          "Ident": "StiChartElement",
+          "Name": "Chart5",
+          "Guid": "4965cc642d73468b8740a50de60ed98e",
+          "ClientRectangle": "800,800,1040,620",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "9f702c59a24d4ee68df402a72dd77c08",
+              "Expression": "Sum(appeal.business_name)",
+              "Label": "business_name",
+              "SeriesType": "ClusteredBar"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "164eea976ffc4cb9ac877ba0a47aec88",
+              "Expression": "appeal.category",
+              "Label": "category"
+            }
+          },
+          "TopN": {
+            "Mode": "Top",
+            "Count": 10,
+            "ShowOthers": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "Диаграмма",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "9092d7df4a6058f9644581e5b6137d16"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "XAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "YAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "Area": {
+            "InterlacingHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Position": "OutsideEnd",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "12": {
+          "Ident": "StiChartElement",
+          "Name": "Chart6",
+          "Guid": "73e767d9b7c5452e884f744434fac772",
+          "ClientRectangle": "1840,800,1180,620",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "a7672ec711ed438d8bcba2418a7da5c3",
+              "Expression": "Sum(appeal.business_name)",
+              "Label": "business_name",
+              "SeriesType": "ClusteredBar"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "feba515e34f84798b5b2a846d522f03a",
+              "Expression": "appeal.industry",
+              "Label": "industry"
+            }
+          },
+          "TopN": {
+            "Mode": "Top",
+            "Count": 13,
+            "ShowOthers": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "Диаграмма",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "efbcea3a0b1c1686ceb27d1ee769044a"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "XAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "YAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "Area": {
+            "InterlacingHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Position": "OutsideEnd",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "13": {
+          "Ident": "StiChartElement",
+          "Name": "Tableappeal",
+          "Guid": "67f6e4532b143ad3ebac2c43a3eb5dc4",
+          "ClientRectangle": "0,560,800,400",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "UserSorts": {
+            "0": {
+              "Key": "6e0ba3c9ddaba0eb7cbbb94c56806300"
+            }
+          },
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "4c90ab75af3744a9901c41b5994f886e",
+              "Expression": "Sum(appeal.business_name)",
+              "Label": "business_name",
+              "SeriesType": "StackedBar"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "38460e771b434836a405cd3c2574f2a3",
+              "Expression": "appeal.district",
+              "Label": "district"
+            }
+          },
+          "TopN": {
+            "Mode": "Top",
+            "Count": 8,
+            "ShowOthers": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "appeal",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "e8f18ba9d5187b2d619d37c009745c21"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 0,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "XAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "YAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "Area": {
+            "InterlacingHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Position": "OutsideEnd",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        }
+      },
+      "Width": 3020.0,
+      "Height": 1423.0,
+      "Border": ";;2;;;;;solid:Black"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+$main-blue: #6389df;
+$light-blue: #2196F3;
+$secondary-blue: #4078e4;
+$light-grey: #e3ebfb;
+$green: #6ca841;
+$red: #ee6768;
+$black: #000;
+$bold-dark: #2c2c2c;
+$regular-dark: #282b36;
+$grey: #f1f1f1;
+$grey-100: #d9dbe1;
+$grey-200: #F1F3F8;
+$grey-300: #c0c0c0;
+$grey-400: #9fa2b4;
+$grey-500: #797980;
+$grey-600: #606060;
+$dark-blue: #1e3057;
+$blue-100: #90a0b7;
+$blue-200: #E8EEFA;
+$blue-800: #334d6e;
+$dark-slate-blue: #5243AC;
+$dark-purple: #5653C2;
+
+.opacity-primary {
+    @include bg-opacity($secondary-blue, 0.15);
+}
+
+.opacity-white {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.grey-300 {
+    background-color: $grey-300;
+}
+
+.primary {
+    background-color: $secondary-blue;
+}
+
+.secondary {
+    background-color: $grey-200;
+}
+
+.green {
+    background-color: $green;
+}
+
+.blue-200 {
+    background-color: $blue-200;
+}
+
+.dark-blue {
+    background-color: $dark-blue;
+}
+
+.dark-slate-blue {
+    background-color: $dark-slate-blue;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-blue {
+    color: $main-blue;
+}
+
+.text-primary {
+    color: $secondary-blue;
+}
+
+.text-dark-blue {
+    color: $dark-blue;
+}
+
+.text-black {
+    color: $bold-dark;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-red {
+    color: #CF5C63;
+}

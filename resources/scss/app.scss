@@ -1,0 +1,173 @@
+@import "helpers/mixins";
+@import "helpers/typography";
+@import "helpers/colors";
+@import "helpers/variables";
+@import "components/buttons";
+@import "pages/inner-reports";
+
+.v-toolbar__content, .v-toolbar__extension {
+  justify-content: center;
+}
+
+.auth-form {
+  &__title {
+    font-size: 30px !important;
+    font-weight: bold;
+  }
+
+  &__btn {
+    background-color: $secondary-blue !important;
+    padding: 20px 0 !important;
+  }
+}
+
+.inside-main {
+  background-color: #fff;
+  background-image: none !important;
+}
+
+
+.main {
+  padding-top: 70px !important;
+}
+
+.appbar-line {
+  padding-top: 0px;
+}
+
+.v-application ul, .v-application ol {
+  padding-left: 0 !important;
+}
+
+.breadcrumb-title {
+  padding-top: 30px;
+}
+
+.top-line__profile {
+  position: relative;
+}
+
+.profile__info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &-name {
+    font-size: 16px;
+    display: block;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+;
+
+  &-img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 10em;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.theme--light.v-data-table {
+  border: 1px solid #CFDAE9;
+  background-color: #fff;
+  box-shadow: none !important;
+  border-radius: 5px;
+}
+
+
+.v-data-table__wrapper {
+  td {
+    padding: 12px 16px !important;
+    border-color: #EBEFF2 !important;
+  }
+}
+
+.v-data-table-header {
+  padding: 10px 0;
+  border-color: #EBEFF2;
+}
+
+.theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr > th {
+  color: #2196F3 !important;
+}
+
+.theme--light.v-data-table .v-data-footer {
+  border-top: none !important;
+}
+
+.v-application .primary {
+  background-color: $main-blue !important;
+}
+
+.profile {
+  position: relative;
+}
+
+
+.v-main__wrap {
+  background-color: #fff;
+  padding: 40px 30px;
+  margin: 0 30px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.v-toolbar__content, .v-toolbar__extension {
+  padding: 4px 30px !important;
+}
+
+.report-card {
+  min-width: 1300px;
+
+  .stiJsViewerPage {
+    letter-spacing: 0em;
+  }
+}
+
+.report-container {
+  min-width: 1200px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1650px) {
+  .v-main {
+    overflow-y: scroll;
+  }
+  .v-main__wrap {
+    min-width: 1400px;
+    position: initial;
+    min-inline-size: fit-content;
+  }
+}
+
+.news-bar-pad {
+  margin-top: 38px !important;
+}
+
+
+.business-chip-container {
+  position: relative !important;
+  padding-right: 2em;
+}
+
+.business-chip {
+  position: absolute !important;
+  right: -2em;
+  top: 0;
+}
+
+.highlight:not(.djs-connection) .djs-visual > :nth-child(1) {
+    fill: green !important; /* color elements as green */
+}

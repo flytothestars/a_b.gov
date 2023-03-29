@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Releway Regular';
+    src: url('/fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Releway Bold';
+    src: url('/fonts/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SFUI Display Regular';
+    src:  url('/fonts/SFUIDisplay-Regular.ttf') format('truetype');
+}
+
+:root {
+    --font-regular: 'Releway Regular';
+    --font-bold: 'Releway Bold';
+    --font-extra-bold: 'Montserrat Bold';
+    --sfui-font: 'SFUI Display Regular';
+
+    /* base values */
+    --text-base-size: 1em;
+    --text-scale-ratio: 1.125;
+    --input-icon-font-size: 22px;
+
+    /* type scale */
+    --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(1em / var(--text-scale-ratio));
+    --text-md: calc(1em * var(--text-scale-ratio));
+    --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: 1.5em;
+    --text-xxl: 2.25em;
+    --text-xxxl: 2.5em;
+}
+
+
+
+.font-bold {
+    font-family: var(--font-bold) !important;
+}
+
+.font-black {
+    font-family: var(--font-extra-bold) !important;
+}
+
+.font-sm {
+    font-size: var(--text-sm) !important;
+}
+.font-md {
+    font-size: var(--text-md) !important;
+}
+
+.font-lg {
+    font-size: var(--text-lg);
+}
+.font-xl {
+    font-size: var(--text-xl);
+}

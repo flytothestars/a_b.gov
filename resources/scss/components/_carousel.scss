@@ -1,0 +1,32 @@
+.carousel {
+    &__items {
+        display: block;
+        margin: 0 auto;
+    }
+    .owl-stage {
+        display: flex;
+    }
+
+    .owl-dots {
+        display: block;
+        text-align: center;
+    }
+    .owl-dot {
+        display: inline-block;
+        margin: 0 5px;
+        span {
+            background-color: $grey-300;
+            width: 10px;
+            height: 10px;
+            border-radius: 10em;
+            display: block;
+            transition: background-color, .4s ease-out;
+        }
+        &:hover,
+        &.active {
+            span {
+                background-color: $secondary-blue;
+            }
+        }
+    }
+}

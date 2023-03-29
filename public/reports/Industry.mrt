@@ -1,0 +1,943 @@
+﻿{
+  "ReportGuid": "45238342abed802142bec4bc8014c52a",
+  "ReportName": "Report",
+  "ReportAlias": "Report",
+  "ReportFile": "Industry (v3).mrt",
+  "ReportCreated": "/Date(0+0600)/",
+  "ReportChanged": "/Date(1634021999000+0600)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "ReportUnit": "Inches",
+  "ScriptLanguage": "CSharp",
+  "Culture": "ru-RU",
+  "PreviewSettings": 260039167,
+  "Dictionary": {
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "root_Top5IndustriesByFall",
+        "Alias": "root_Top5IndustriesByFall",
+        "Key": "429dac6d364a4406a79ad77588bfeee5",
+        "Columns": {
+          "0": {
+            "Name": "IndustryName",
+            "Index": -1,
+            "NameInSource": "IndustryName",
+            "Alias": "IndustryName",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Value",
+            "Index": -1,
+            "NameInSource": "Value",
+            "Alias": "Value",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Industry.root_Top5IndustriesByFall"
+      },
+      "1": {
+        "Ident": "StiDataTableSource",
+        "Name": "root_Top5IndustriesByGrowth",
+        "Alias": "root_Top5IndustriesByGrowth",
+        "Key": "5db5635819904f4d9ea3a986fc3a3257",
+        "Columns": {
+          "0": {
+            "Name": "IndustryName",
+            "Index": -1,
+            "NameInSource": "IndustryName",
+            "Alias": "IndustryName",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Value",
+            "Index": -1,
+            "NameInSource": "Value",
+            "Alias": "Value",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Industry.root_Top5IndustriesByGrowth"
+      },
+      "2": {
+        "Ident": "StiDataTableSource",
+        "Name": "root_PhysicalVolumeIndexByDistricts",
+        "Alias": "root_PhysicalVolumeIndexByDistricts",
+        "Key": "1db99a639ec541489289a74730110cc0",
+        "Columns": {
+          "0": {
+            "Name": "DistrictName",
+            "Index": -1,
+            "NameInSource": "DistrictName",
+            "Alias": "DistrictName",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Value",
+            "Index": -1,
+            "NameInSource": "Value",
+            "Alias": "Value",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Industry.root_PhysicalVolumeIndexByDistricts"
+      },
+      "3": {
+        "Ident": "StiDataTableSource",
+        "Name": "root_FixedCapitalInvestmentsByTypeOfProduction",
+        "Alias": "root_FixedCapitalInvestmentsByTypeOfProduction",
+        "Key": "e9dd96661c744800bcc92c74589e9a48",
+        "Columns": {
+          "0": {
+            "Name": "TypeOfProductionName",
+            "Index": -1,
+            "NameInSource": "TypeOfProductionName",
+            "Alias": "TypeOfProductionName",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Value",
+            "Index": -1,
+            "NameInSource": "Value",
+            "Alias": "Value",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Industry.root_FixedCapitalInvestmentsByTypeOfProduction"
+      },
+      "4": {
+        "Ident": "StiDataTableSource",
+        "Name": "root",
+        "Alias": "root",
+        "Key": "5eaf86fae2c54e2ba1a0a0560f49e389",
+        "Columns": {
+          "0": {
+            "Name": "ReportFilter",
+            "Index": -1,
+            "NameInSource": "ReportFilter",
+            "Alias": "ReportFilter",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "PhysicalVolumeIndexByDistricts",
+            "Index": -1,
+            "NameInSource": "PhysicalVolumeIndexByDistricts",
+            "Alias": "PhysicalVolumeIndexByDistricts",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Top5IndustriesByGrowth",
+            "Index": -1,
+            "NameInSource": "Top5IndustriesByGrowth",
+            "Alias": "Top5IndustriesByGrowth",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Top5IndustriesByFall",
+            "Index": -1,
+            "NameInSource": "Top5IndustriesByFall",
+            "Alias": "Top5IndustriesByFall",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "InvestmentsInManufacturingIndustry",
+            "Index": -1,
+            "NameInSource": "InvestmentsInManufacturingIndustry",
+            "Alias": "InvestmentsInManufacturingIndustry",
+            "Type": "System.Decimal"
+          },
+          "5": {
+            "Name": "Performance",
+            "Index": -1,
+            "NameInSource": "Performance",
+            "Alias": "Performance",
+            "Type": "System.Decimal"
+          },
+          "6": {
+            "Name": "ProductionByIndustries",
+            "Index": -1,
+            "NameInSource": "ProductionByIndustries",
+            "Alias": "ProductionByIndustries",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "ProductionVolumeByDistricts",
+            "Index": -1,
+            "NameInSource": "ProductionVolumeByDistricts",
+            "Alias": "ProductionVolumeByDistricts",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "InvestmentsInManufacturingIndustryByDistricts",
+            "Index": -1,
+            "NameInSource": "InvestmentsInManufacturingIndustryByDistricts",
+            "Alias": "InvestmentsInManufacturingIndustryByDistricts",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "DynamicsOfProductionGrowth",
+            "Index": -1,
+            "NameInSource": "DynamicsOfProductionGrowth",
+            "Alias": "DynamicsOfProductionGrowth",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "FixedCapitalInvestmentsByTypeOfProduction",
+            "Index": -1,
+            "NameInSource": "FixedCapitalInvestmentsByTypeOfProduction",
+            "Alias": "FixedCapitalInvestmentsByTypeOfProduction",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "ProductivityByTypeOfProduction",
+            "Index": -1,
+            "NameInSource": "ProductivityByTypeOfProduction",
+            "Alias": "ProductivityByTypeOfProduction",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Industry.root"
+      },
+      "5": {
+        "Ident": "StiDataTableSource",
+        "Name": "root_ProductivityByTypeOfProduction",
+        "Alias": "root_ProductivityByTypeOfProduction",
+        "Key": "db3b8beceac6407085bf5e613796bf76",
+        "Columns": {
+          "0": {
+            "Name": "TypeOfProductionName",
+            "Index": -1,
+            "NameInSource": "TypeOfProductionName",
+            "Alias": "TypeOfProductionName",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Value",
+            "Index": -1,
+            "NameInSource": "Value",
+            "Alias": "Value",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Industry.root_ProductivityByTypeOfProduction"
+      },
+      "6": {
+        "Ident": "StiDataTableSource",
+        "Name": "root_DynamicsOfProductionGrowth",
+        "Alias": "root_DynamicsOfProductionGrowth",
+        "Key": "8fb57e962ea3401787739473a5067b84",
+        "Columns": {
+          "0": {
+            "Name": "Year",
+            "Index": -1,
+            "NameInSource": "Year",
+            "Alias": "Year",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "Value",
+            "Index": -1,
+            "NameInSource": "Value",
+            "Alias": "Value",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Industry.root_DynamicsOfProductionGrowth"
+      },
+      "7": {
+        "Ident": "StiDataTableSource",
+        "Name": "root_ProductionByIndustries",
+        "Alias": "root_ProductionByIndustries",
+        "Key": "8861d059dfc944898fffd2a8edba3126",
+        "Columns": {
+          "0": {
+            "Name": "IndustryName",
+            "Index": -1,
+            "NameInSource": "IndustryName",
+            "Alias": "IndustryName",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Value",
+            "Index": -1,
+            "NameInSource": "Value",
+            "Alias": "Value",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Industry.root_ProductionByIndustries"
+      },
+      "8": {
+        "Ident": "StiDataTableSource",
+        "Name": "root_InvestmentsInManufacturingIndustryByDistricts",
+        "Alias": "root_InvestmentsInManufacturingIndustryByDistricts",
+        "Key": "aa8a4e424eae4b9d869e2742cf00bd1a",
+        "Columns": {
+          "0": {
+            "Name": "DistrictName",
+            "Index": -1,
+            "NameInSource": "DistrictName",
+            "Alias": "DistrictName",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Value",
+            "Index": -1,
+            "NameInSource": "Value",
+            "Alias": "Value",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Industry.root_InvestmentsInManufacturingIndustryByDistricts"
+      },
+      "9": {
+        "Ident": "StiDataTableSource",
+        "Name": "root_ReportFilter",
+        "Alias": "root_ReportFilter",
+        "Key": "7181f6a45c4d43ca8f3083d6b53537b9",
+        "Columns": {
+          "0": {
+            "Name": "Period",
+            "Index": -1,
+            "NameInSource": "Period",
+            "Alias": "Period",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "SizeOfEnterprise",
+            "Index": -1,
+            "NameInSource": "SizeOfEnterprise",
+            "Alias": "SizeOfEnterprise",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "District",
+            "Index": -1,
+            "NameInSource": "District",
+            "Alias": "District",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "BusinessType",
+            "Index": -1,
+            "NameInSource": "BusinessType",
+            "Alias": "BusinessType",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Industry.root_ReportFilter"
+      },
+      "10": {
+        "Ident": "StiDataTableSource",
+        "Name": "root_ProductionVolumeByDistricts",
+        "Alias": "root_ProductionVolumeByDistricts",
+        "Key": "0ead8b6929e34b96bb31fbd596286a48",
+        "Columns": {
+          "0": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "DistrictName",
+            "Index": -1,
+            "NameInSource": "DistrictName",
+            "Alias": "DistrictName",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Value",
+            "Index": -1,
+            "NameInSource": "Value",
+            "Alias": "Value",
+            "Type": "System.Decimal"
+          }
+        },
+        "NameInSource": "Industry.root_ProductionVolumeByDistricts"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiJsonDatabase",
+        "Name": "Industry",
+        "Alias": "Industry",
+        "PathData": "C:\\Users\\dtely\\Desktop\\Industry.json"
+      }
+    },
+    "Relations": {
+      "0": {
+        "Name": "root",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Top5IndustriesByFall"
+        },
+        "NameInSource": "root_Top5IndustriesByFall",
+        "Alias": "root",
+        "Key": "1c89cffdd73d49b98e7cce227865c295",
+        "ParentSource": "root",
+        "ChildSource": "root_Top5IndustriesByFall"
+      },
+      "1": {
+        "Name": "root",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Top5IndustriesByGrowth"
+        },
+        "NameInSource": "root_Top5IndustriesByGrowth",
+        "Alias": "root",
+        "Key": "a48c8f8c36964170bc946e4e620cb032",
+        "ParentSource": "root",
+        "ChildSource": "root_Top5IndustriesByGrowth"
+      },
+      "2": {
+        "Name": "root",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "PhysicalVolumeIndexByDistricts"
+        },
+        "NameInSource": "root_PhysicalVolumeIndexByDistricts",
+        "Alias": "root",
+        "Key": "7d5ad0eb2ee5440a9783e1103f8a5ee1",
+        "ParentSource": "root",
+        "ChildSource": "root_PhysicalVolumeIndexByDistricts"
+      },
+      "3": {
+        "Name": "root",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "FixedCapitalInvestmentsByTypeOfProduction"
+        },
+        "NameInSource": "root_FixedCapitalInvestmentsByTypeOfProduction",
+        "Alias": "root",
+        "Key": "b6f16425f7be4b75a8314e8a16d97de0",
+        "ParentSource": "root",
+        "ChildSource": "root_FixedCapitalInvestmentsByTypeOfProduction"
+      },
+      "4": {
+        "Name": "root",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "ProductivityByTypeOfProduction"
+        },
+        "NameInSource": "root_ProductivityByTypeOfProduction",
+        "Alias": "root",
+        "Key": "71e7b97611a64c7984a2e3fef184cef8",
+        "ParentSource": "root",
+        "ChildSource": "root_ProductivityByTypeOfProduction"
+      },
+      "5": {
+        "Name": "root",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "DynamicsOfProductionGrowth"
+        },
+        "NameInSource": "root_DynamicsOfProductionGrowth",
+        "Alias": "root",
+        "Key": "35079135cce2469397b84657c2ecd6ca",
+        "ParentSource": "root",
+        "ChildSource": "root_DynamicsOfProductionGrowth"
+      },
+      "6": {
+        "Name": "root",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "ProductionByIndustries"
+        },
+        "NameInSource": "root_ProductionByIndustries",
+        "Alias": "root",
+        "Key": "599008548e6d4ab1befc68c640f050bd",
+        "ParentSource": "root",
+        "ChildSource": "root_ProductionByIndustries"
+      },
+      "7": {
+        "Name": "root",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "InvestmentsInManufacturingIndustryByDistricts"
+        },
+        "NameInSource": "root_InvestmentsInManufacturingIndustryByDistricts",
+        "Alias": "root",
+        "Key": "d63e2184d1b244e9b894b4bb0edc1767",
+        "ParentSource": "root",
+        "ChildSource": "root_InvestmentsInManufacturingIndustryByDistricts"
+      },
+      "8": {
+        "Name": "root",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "ReportFilter"
+        },
+        "NameInSource": "root_ReportFilter",
+        "Alias": "root",
+        "Key": "60e4a089853c41fbb42c50aa431af6a9",
+        "ParentSource": "root",
+        "ChildSource": "root_ReportFilter"
+      },
+      "9": {
+        "Name": "root",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "ProductionVolumeByDistricts"
+        },
+        "NameInSource": "root_ProductionVolumeByDistricts",
+        "Alias": "root",
+        "Key": "04a421915e30458589c6c662ed9a366d",
+        "ParentSource": "root",
+        "ChildSource": "root_ProductionVolumeByDistricts"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiDashboard",
+      "Name": "Industry",
+      "Guid": "497b8c89cd8541cd9556bb8783d56916",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Tableroot_Top5IndustriesByGrowth",
+          "Guid": "5f9e62286f3e4f2792c3356136175710",
+          "ClientRectangle": "280,0,360,160",
+          "Border": ";;;;",
+          "UserSorts": {
+            "0": {
+              "Key": "2a0d789bbe414cb68d572227847aa757",
+              "Direction": "Descending"
+            }
+          },
+          "IconRanges": {
+            "0": {
+              "StartExpression": "0",
+              "EndExpression": "100",
+              "Icon": "FAPlus"
+            }
+          },
+          "TextFormat": {
+            "Ident": "StiCustomFormatService",
+            "StringFormat": "+0.00%"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "2a0d789bbe414cb68d572227847aa757",
+            "Expression": "Sum(root_Top5IndustriesByGrowth.Value/100)",
+            "Label": "Value"
+          },
+          "Series": {
+            "Ident": "SeriesIndicatorMeter",
+            "Key": "ca9fd249555846ca90620b3ae3f1d24b",
+            "Expression": "root_Top5IndustriesByGrowth.IndustryName",
+            "Label": "IndustryName"
+          },
+          "Title": {
+            "Text": "ТОП-5 отраслей по росту ИФО",
+            "HorAlignment": "Center"
+          },
+          "GlyphColor": "242,242,242",
+          "Font": ";13;;",
+          "IconSet": "Quarter",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false,
+            "ShowFullScreenButton": false,
+            "ShowSaveButton": false,
+            "ShowViewDataButton": false
+          }
+        },
+        "1": {
+          "Ident": "StiProgressElement",
+          "Name": "Tableroot_PhysicalVolumeIndexByDistricts",
+          "Guid": "cac274fed9544bd29cdeda4b052014df",
+          "ClientRectangle": "0,0,280,320",
+          "Border": ";;;;",
+          "UserSorts": {
+            "0": {
+              "Key": "8b2436aea9064fa4945589f142a90d51",
+              "Direction": "Descending"
+            }
+          },
+          "Value": {
+            "Ident": "ValueProgressMeter",
+            "Key": "8b2436aea9064fa4945589f142a90d51",
+            "Expression": "Sum(root_PhysicalVolumeIndexByDistricts.Value) /100",
+            "Label": "Value"
+          },
+          "Target": {
+            "Ident": "TargetProgressMeter",
+            "Key": "52093db02fc24a429da51d2d9fc07f1a",
+            "Expression": "Count(root_PhysicalVolumeIndexByDistricts.DistrictName)",
+            "Label": "DistrictName"
+          },
+          "Series": {
+            "Ident": "SeriesProgressMeter",
+            "Key": "e883dd628040498f83cc1a2aaa4cf918",
+            "Expression": "root_PhysicalVolumeIndexByDistricts.DistrictName",
+            "Label": "Район"
+          },
+          "Title": {
+            "Text": "ИФО промышленности по районам",
+            "HorAlignment": "Center"
+          },
+          "ForeColor": "0,0,0",
+          "Font": ";13;Bold;",
+          "Mode": "DataBars",
+          "DashboardInteraction": {
+            "Ident": "Progress",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false,
+            "ShowFullScreenButton": false,
+            "ShowSaveButton": false,
+            "ShowViewDataButton": false
+          }
+        },
+        "2": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator1",
+          "Guid": "7568ad6f144f421fa437dcf30fc5d617",
+          "ClientRectangle": "280,160,360,160",
+          "Border": ";;;;",
+          "UserSorts": {
+            "0": {
+              "Key": "f02cc1d15661498db99aac412ced611f"
+            }
+          },
+          "TextFormat": {
+            "Ident": "StiPercentageFormatService",
+            "NegativePattern": 1,
+            "GroupSeparator": ",",
+            "State": "PercentageSymbol",
+            "PositivePattern": 1,
+            "Symbol": "%"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "f02cc1d15661498db99aac412ced611f",
+            "Expression": "Sum(root_Top5IndustriesByFall.Value/100)",
+            "Label": "Value"
+          },
+          "Series": {
+            "Ident": "SeriesIndicatorMeter",
+            "Key": "05b48f6f910846cabbec50d99b46b34f",
+            "Expression": "root_Top5IndustriesByFall.IndustryName",
+            "Label": "IndustryName"
+          },
+          "Title": {
+            "Text": "ТОП-5 отраслей по снижению ИФО",
+            "HorAlignment": "Center"
+          },
+          "ForeColor": "192,0,0",
+          "GlyphColor": "242,242,242",
+          "Font": ";13;;",
+          "IconSet": "Quarter",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false,
+            "ShowFullScreenButton": false,
+            "ShowSaveButton": false,
+            "ShowViewDataButton": false
+          }
+        },
+        "3": {
+          "Ident": "StiChartElement",
+          "Name": "Chart1",
+          "Guid": "a8add0390e1040a39f76c32dfd746c3c",
+          "ClientRectangle": "640,0,560,600",
+          "Padding": {
+            "Left": 0,
+            "Top": 0,
+            "Right": 0,
+            "Bottom": 0
+          },
+          "Border": ";;;;",
+          "UserSorts": {
+            "0": {
+              "Key": "295999f69dc14dba9c90c4612d65abd8",
+              "Direction": "Descending"
+            }
+          },
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "295999f69dc14dba9c90c4612d65abd8",
+              "Expression": "Sum(root_ProductionByIndustries.Value)",
+              "Label": " "
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "dee0c22da8e64b67aa5aa29bd66c60c7",
+              "Expression": "root_ProductionByIndustries.IndustryName",
+              "Label": " "
+            }
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "ShowFullScreenButton": false,
+            "ShowSaveButton": false,
+            "ShowViewDataButton": false
+          },
+          "Title": {
+            "Text": "Объемы производства по отраслям, млрд. тг.",
+            "HorAlignment": "Center"
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "d6d5198ced4a7d9ca676bb5a74afd865"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits"
+          },
+          "YAxis": {
+            "Visible": false
+          },
+          "Area": {
+            "GridLinesHor": {
+              "Color": "Transparent"
+            },
+            "GridLinesVert": {
+              "Color": "Transparent"
+            },
+            "InterlacingHor": {
+              "Color": "Transparent"
+            },
+            "InterlacingVert": {
+              "Color": "Transparent"
+            }
+          },
+          "Labels": {
+            "ForeColor": "Black",
+            "Position": "InsideEnd",
+            "Style": "Value"
+          }
+        },
+        "4": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator2",
+          "Guid": "c7869a34ae3343298db77ef376c300b1",
+          "ClientRectangle": "0,320,280,280",
+          "Border": ";;;;",
+          "TextFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 0,
+            "GroupSeparator": ",",
+            "State": "CurrencySymbol",
+            "PositivePattern": 0,
+            "Symbol": "млрд ₸"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "da7cd928d9684741a0aa9f7f98ab9c0f",
+            "Expression": "Sum(root.InvestmentsInManufacturingIndustry)",
+            "Label": "InvestmentsInManufacturingIndustry"
+          },
+          "Title": {
+            "Text": "Сумма инвестиций в обрабатывающая промышленность"
+          },
+          "GlyphColor": "242,242,242",
+          "Font": ";13;Bold;",
+          "Icon": "CircleThin",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "0",
+              "IconColor": "Maroon",
+              "Permissions": "Icon",
+              "IconAlignment": "None"
+            }
+          },
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "None",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false,
+            "ShowFullScreenButton": false,
+            "ShowSaveButton": false,
+            "ShowViewDataButton": false
+          }
+        },
+        "5": {
+          "Ident": "StiChartElement",
+          "Name": "Chart2",
+          "Guid": "505e2e113b104528a878cb0e131143ad",
+          "ClientRectangle": "280,320,360,280",
+          "Border": ";;;;",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "867a6f3964d04654818e69f5d6ea5fc1",
+              "Expression": "Sum(root_ProductionVolumeByDistricts.Value/100)",
+              "Label": "Value",
+              "SeriesType": "Doughnut",
+              "ShowZeros": "Gap",
+              "ShowNulls": "Gap"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "b78fb691a6104e89b67935eef8411894",
+              "Expression": "root_ProductionVolumeByDistricts.DistrictName",
+              "Label": "DistrictName"
+            }
+          },
+          "ColorEach": true,
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false,
+            "ShowFullScreenButton": false,
+            "ShowSaveButton": false,
+            "ShowViewDataButton": false
+          },
+          "Title": {
+            "Text": "Доля объема производства по районам"
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "7bf0200e19b3df277fa625015b4e722d"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiPercentageFormatService",
+            "NegativePattern": 1,
+            "GroupSeparator": ",",
+            "State": "PercentageSymbol",
+            "PositivePattern": 1,
+            "Symbol": "%"
+          },
+          "Area": {
+            "ColorEach": true,
+            "GridLinesHor": {
+              "Color": "Transparent"
+            },
+            "GridLinesVert": {
+              "Color": "Transparent"
+            },
+            "InterlacingHor": {
+              "Color": "Transparent"
+            },
+            "InterlacingVert": {
+              "Color": "Transparent"
+            }
+          },
+          "Labels": {
+            "ForeColor": "Black",
+            "Position": "Center",
+            "Style": "Value"
+          },
+          "RoundValues": false
+        }
+      },
+      "Border": ";;2;;;;;solid:Black"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.footer {
+    padding-top: 48px;
+    padding-bottom: 24px;
+    background-color: $dark-blue;
+    color: white;
+    margin-top: auto;
+
+    &__navigation {
+        @include font-md;
+        margin-top: 26px;
+    }
+
+    &__link {
+        padding: 0px 24px;
+        color: white;
+        text-decoration: none;
+    }
+
+    &__line {
+        background-color: white;
+    }
+
+    &__copyright {
+        @include font-md;
+        color: $grey-100;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .footer {
+        text-align: center;
+        padding: 27px 18%;
+        font-size: var(--text-sm);
+
+        &__navigation {
+            display: grid;
+            margin-top: 16px;
+        }
+        &__link {
+            margin-bottom: 4px;
+        }
+        .social-links {
+            margin: 1rem 0;
+        }
+    }
+}

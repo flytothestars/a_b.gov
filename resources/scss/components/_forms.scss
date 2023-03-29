@@ -1,0 +1,60 @@
+.form {
+  @include standard-radius;
+  @include standard-shadow;
+  padding: 50px 68px 90px 68px;
+
+  &__title {
+    @include bold-font-xxl;
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+
+  &__sub-title {
+    color: $grey-500;
+    line-height: var(--text-md);
+  }
+
+  &__sub-caption {
+    font-family: var(--sfui-font);
+    font-size: var(--text-xs);
+    color: $grey-600;
+
+    a {
+      font-weight: 600;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .form {
+    padding: 34px 23px;
+
+    &__title {
+      font-size: var(--text-xl);
+      color: $grey-300;
+      margin-left: 0px;
+      margin-right: 0px;
+      position: relative;
+
+      &_active,
+      &:hover {
+        color: $bold-dark !important;
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          left: 0px;
+          width: 100%;
+          height: 4px;
+          background-color: $green;
+        }
+      }
+
+    }
+  }
+}
+
+.form_item--hidden {
+  display: none !important;
+}

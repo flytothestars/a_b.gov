@@ -1,0 +1,91 @@
+#app .content {
+    padding-top: 105px;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    .navbar {
+        @include standard-shadow;
+        .nav-item {
+            .nav-link {
+                color: $bold-dark;
+                text-decoration: none;
+
+                &:hover,
+                &:active,
+                &.active{
+                    color: $main-blue;
+                    @include bold-font;
+                    line-height: 19px;
+                    position: relative;
+                    display: inline-block;
+                    text-align: center;
+
+                    &:after {
+                        content: "";
+                        background-color: $main-blue;
+                        height: 2px;
+                        width: 100%;
+                        position: absolute;
+                        left: 0px;
+                        bottom: -6px;
+                    }
+                }
+
+                &::before {
+                    @include bold-font;
+                    line-height: 19px;
+                    display: block;
+                    content: attr(title);
+                    height: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+    header {
+        .navbar {
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+
+            .container {
+                flex-wrap: wrap;
+            }
+
+            &-toggler {
+                border-color: transparent;
+            }
+
+            &-collapse {
+                order: 5;
+            }
+
+            .navbar-brand {
+                width: 30%;
+                flex-grow: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            form {
+                width: 30%;
+            }
+        }
+    }
+
+    #app {
+        .content {
+            padding-top: 60px;
+        }
+    }
+}

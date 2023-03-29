@@ -1,0 +1,105 @@
+.side-menu {
+    position: fixed;
+    height: 100%;
+
+    &__wrapper {
+        width: 380px;
+        height: 100%;
+    }
+
+    &_profile {
+        width: 380px;
+    }
+
+    &__hr {
+        height: 2px !important;
+        @include bg-opacity(white, 0.4);
+    }
+    .nav-link {
+        display: flex;
+    }
+
+    &__nav-link {
+        padding: 16px 24px;
+        line-height: 24px;
+        border: none;
+        width: 100%;
+        position: relative;
+        color: white;
+
+        .icon {
+            font-size: var(--text-md);
+            margin-right: 14px;
+        }
+
+        &.active,
+        &:hover,
+        &:active {
+            @include bg-opacity($grey-400, 0.08);
+            color: $green !important;
+
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 10px;
+                background-color: $green;
+                height: 100%;
+            }
+        }
+    }
+
+    &__toogle {
+        background: $green;
+        .icon {
+            float: right;
+            margin-left: auto;
+            font-size: 18px;
+        }
+        & > .nav-link {
+            line-height: 24px;
+            align-items: center;
+            &:hover {
+                color: white !important;
+            }
+        }
+
+    }
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+    .side-menu {
+        &__logo {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-right: 16px;
+        }
+        .account-info {
+            display: block;
+            padding: unset;
+            &__data {
+                display: none;
+            }
+        }
+        &_profile {
+            width: unset;
+            position: fixed;
+        }
+        &__nav-item {
+            width: 100%;
+        }
+        .nav-link {
+            font-size: 0;
+            padding-left: 24px;
+
+            .icon {
+                font-size: 18px;
+                margin-left: unset;
+            }
+        }
+    }
+}

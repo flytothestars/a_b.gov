@@ -1,0 +1,64 @@
+
+.nav_tab {
+    padding: 20px 0px;
+
+    .nav-item {
+        .nav-link {
+            text-decoration: none;
+            color: $bold-dark;
+            z-index: 2;
+
+            &:focus-visible {
+                outline: none;
+            }
+
+            &:hover,
+            &:active,
+            &.active {
+                @include bold-font;
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                color: $green;
+
+                &::after {
+                    content: "";
+                    background-color: $green;
+                    height: 2px;
+                    width: 100%;
+                    position: absolute;
+                    left: 0px;
+                    bottom: -6px;
+
+                }
+            }
+
+            &::before {
+                @include bold-font;
+                line-height: 19px;
+                display: block;
+                content: attr(title);
+                height: 0;
+                overflow: hidden;
+                visibility: hidden;
+            }
+        }
+    }
+
+    &.nav_lg {
+        .nav-item {
+            .nav-link {
+                @include bold-font-xxl;
+
+                &:hover,
+                &:active,
+                &.active {
+                    &::after {
+                        height: 10px;
+                        bottom: -21px;
+                    }
+                }
+            }
+        }
+    }
+}

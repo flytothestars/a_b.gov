@@ -1,0 +1,983 @@
+{
+	"info": {
+		"_postman_id": "5e80f547-2835-4da9-8bc7-27dadaa7c990",
+		"name": "Yupi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login admin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const user = pm.response.json();\r",
+									"\r",
+									"if (pm.test(\"Has properties\")) {\r",
+									"    pm.globals.set('yupi_token', user.access_token);\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-TOKEN",
+								"type": "text",
+								"value": "{{j_csrf_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\": \"+70010000001\",\r\n    \"password\": \"Pa$$w0rd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{yupi}}/api/login",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login distributor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const user = pm.response.json();\r",
+									"\r",
+									"if (pm.test(\"Has properties\")) {\r",
+									"    pm.globals.set('yupi_token', user.access_token);\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-TOKEN",
+								"type": "text",
+								"value": "{{j_csrf_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\": \"+70010000004\",\r\n    \"password\": \"Pa$$w0rd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{yupi}}/api/login",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login executor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const user = pm.response.json();\r",
+									"\r",
+									"if (pm.test(\"Has properties\")) {\r",
+									"    pm.globals.set('yupi_token', user.access_token);\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-TOKEN",
+								"type": "text",
+								"value": "{{j_csrf_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\": \"+70010000002\",\r\n    \"password\": \"Pa$$w0rd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{yupi}}/api/login",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login coExecutor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const user = pm.response.json();\r",
+									"\r",
+									"if (pm.test(\"Has properties\")) {\r",
+									"    pm.globals.set('yupi_token', user.access_token);\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-TOKEN",
+								"type": "text",
+								"value": "{{j_csrf_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\": \"+70010000005\",\r\n    \"password\": \"Pa$$w0rd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{yupi}}/api/login",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dictionaries",
+			"item": [
+				{
+					"name": "AppealResultType",
+					"item": [
+						{
+							"name": "List (to complete)",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{yupi_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{yupi}}/api/dictionary/appealResultTypes?appeal_id=29fca7d8-47ce-4c98-abb6-ee3bb405a9db&to_appeal_status_id=f9840d9f-d405-4c17-9789-8d34b082ad06",
+									"host": [
+										"{{yupi}}"
+									],
+									"path": [
+										"api",
+										"dictionary",
+										"appealResultTypes"
+									],
+									"query": [
+										{
+											"key": "appeal_id",
+											"value": "29fca7d8-47ce-4c98-abb6-ee3bb405a9db"
+										},
+										{
+											"key": "to_appeal_status_id",
+											"value": "f9840d9f-d405-4c17-9789-8d34b082ad06"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List (to reject)",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{yupi_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{yupi}}/api/dictionary/appealResultTypes?appeal_id=29fca7d8-47ce-4c98-abb6-ee3bb405a9db&to_appeal_status_id=21cbcd3d-b6b4-48f4-abbf-4929dde31706",
+									"host": [
+										"{{yupi}}"
+									],
+									"path": [
+										"api",
+										"dictionary",
+										"appealResultTypes"
+									],
+									"query": [
+										{
+											"key": "appeal_id",
+											"value": "29fca7d8-47ce-4c98-abb6-ee3bb405a9db"
+										},
+										{
+											"key": "to_appeal_status_id",
+											"value": "21cbcd3d-b6b4-48f4-abbf-4929dde31706"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Districts",
+					"item": [
+						{
+							"name": "List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{yupi_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{yupi}}/api/dictionary/district",
+									"host": [
+										"{{yupi}}"
+									],
+									"path": [
+										"api",
+										"dictionary",
+										"district"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Appeals",
+			"item": [
+				{
+					"name": "List (executor)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{yupi_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{yupi}}/api/executor/appeals?client_appeal_status_id=1cf63f67-fe81-45fc-97f0-d335251f66f7&appeal_status_id=36d72113-ecd0-481b-954b-c5f62d0357af&category_id=17fca7d8-47ce-4c98-abb6-ee3bb405a9db&type_id=93dedf07-4ae4-465c-9150-54d93c0370e1&co_executor_id=11&executor_id=13&distributor_id=10&from_date=2021-08-19 01:08:46&to_date=2021-08-19 01:08:47",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"executor",
+								"appeals"
+							],
+							"query": [
+								{
+									"key": "client_appeal_status_id",
+									"value": "1cf63f67-fe81-45fc-97f0-d335251f66f7"
+								},
+								{
+									"key": "appeal_status_id",
+									"value": "36d72113-ecd0-481b-954b-c5f62d0357af"
+								},
+								{
+									"key": "category_id",
+									"value": "17fca7d8-47ce-4c98-abb6-ee3bb405a9db"
+								},
+								{
+									"key": "type_id",
+									"value": "93dedf07-4ae4-465c-9150-54d93c0370e1"
+								},
+								{
+									"key": "co_executor_id",
+									"value": "11"
+								},
+								{
+									"key": "executor_id",
+									"value": "13"
+								},
+								{
+									"key": "distributor_id",
+									"value": "10"
+								},
+								{
+									"key": "from_date",
+									"value": "2021-08-19 01:08:46"
+								},
+								{
+									"key": "to_date",
+									"value": "2021-08-19 01:08:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reject (executor)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{yupi_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"appeal_result_type_id\": \"8f901daa-7ac2-46a8-a7ef-38c0687b3e91\",\r\n    \"comment\": \"ыавпывап ывап ывпывапыв пывап!!!!123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{yupi}}/api/executor/appeals/29fca7d8-47ce-4c98-abb6-ee3bb405a9db/reject",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"executor",
+								"appeals",
+								"29fca7d8-47ce-4c98-abb6-ee3bb405a9db",
+								"reject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Attach document (distributor)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{yupi_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file[]",
+									"type": "file",
+									"src": [
+										"/D:/Personal/Media/TestDocuments/Test document - Copy.pdf",
+										"/D:/Personal/Media/TestDocuments/Test document.pdf"
+									]
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{yupi}}/api/distributor/appeals/fbe9e0fd-a4f3-440c-8eed-1162ab8db60a/documents/attach",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"distributor",
+								"appeals",
+								"fbe9e0fd-a4f3-440c-8eed-1162ab8db60a",
+								"documents",
+								"attach"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Attach document (executor)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{yupi_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file[]",
+									"type": "file",
+									"src": [
+										"/D:/Personal/Media/TestDocuments/Test document - Copy.pdf",
+										"/D:/Personal/Media/TestDocuments/Test document.pdf"
+									]
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{yupi}}/api/executor/appeals/fbe9e0fd-a4f3-440c-8eed-1162ab8db60a/documents/attach",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"executor",
+								"appeals",
+								"fbe9e0fd-a4f3-440c-8eed-1162ab8db60a",
+								"documents",
+								"attach"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Attach document (co-executor)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{yupi_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file[]",
+									"type": "file",
+									"src": [
+										"/D:/Personal/Media/TestDocuments/Test document - Copy.pdf",
+										"/D:/Personal/Media/TestDocuments/Test document.pdf"
+									]
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{yupi}}/api/coexecutor/appeals/fbe9e0fd-a4f3-440c-8eed-1162ab8db60a/documents/attach",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"coexecutor",
+								"appeals",
+								"fbe9e0fd-a4f3-440c-8eed-1162ab8db60a",
+								"documents",
+								"attach"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List (executor) by auth",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{yupi_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{yupi}}/api/executor/appeals/indexByAuthUser?client_appeal_status_id=1cf63f67-fe81-45fc-97f0-d335251f66f7&appeal_status_id=36d72113-ecd0-481b-954b-c5f62d0357af&category_id=17fca7d8-47ce-4c98-abb6-ee3bb405a9db&type_id=93dedf07-4ae4-465c-9150-54d93c0370e1&co_executor_id=11&executor_id=13&distributor_id=10&from_date=2021-08-19 01:08:46&to_date=2021-08-19 01:08:47",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"executor",
+								"appeals",
+								"indexByAuthUser"
+							],
+							"query": [
+								{
+									"key": "client_appeal_status_id",
+									"value": "1cf63f67-fe81-45fc-97f0-d335251f66f7"
+								},
+								{
+									"key": "appeal_status_id",
+									"value": "36d72113-ecd0-481b-954b-c5f62d0357af"
+								},
+								{
+									"key": "category_id",
+									"value": "17fca7d8-47ce-4c98-abb6-ee3bb405a9db"
+								},
+								{
+									"key": "type_id",
+									"value": "93dedf07-4ae4-465c-9150-54d93c0370e1"
+								},
+								{
+									"key": "co_executor_id",
+									"value": "11"
+								},
+								{
+									"key": "executor_id",
+									"value": "13"
+								},
+								{
+									"key": "distributor_id",
+									"value": "10"
+								},
+								{
+									"key": "from_date",
+									"value": "2021-08-19 01:08:46"
+								},
+								{
+									"key": "to_date",
+									"value": "2021-08-19 01:08:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List (co-executor)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{yupi_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{yupi}}/api/coexecutor/appeals?client_appeal_status_id=1cf63f67-fe81-45fc-97f0-d335251f66f7&appeal_status_id=36d72113-ecd0-481b-954b-c5f62d0357af&category_id=17fca7d8-47ce-4c98-abb6-ee3bb405a9db&type_id=93dedf07-4ae4-465c-9150-54d93c0370e1&co_executor_id=11&executor_id=13&distributor_id=10&from_date=2021-08-19 01:08:46&to_date=2021-08-19 01:08:47",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"coexecutor",
+								"appeals"
+							],
+							"query": [
+								{
+									"key": "client_appeal_status_id",
+									"value": "1cf63f67-fe81-45fc-97f0-d335251f66f7"
+								},
+								{
+									"key": "appeal_status_id",
+									"value": "36d72113-ecd0-481b-954b-c5f62d0357af"
+								},
+								{
+									"key": "category_id",
+									"value": "17fca7d8-47ce-4c98-abb6-ee3bb405a9db"
+								},
+								{
+									"key": "type_id",
+									"value": "93dedf07-4ae4-465c-9150-54d93c0370e1"
+								},
+								{
+									"key": "co_executor_id",
+									"value": "11"
+								},
+								{
+									"key": "executor_id",
+									"value": "13"
+								},
+								{
+									"key": "distributor_id",
+									"value": "10"
+								},
+								{
+									"key": "from_date",
+									"value": "2021-08-19 01:08:46"
+								},
+								{
+									"key": "to_date",
+									"value": "2021-08-19 01:08:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List (co-executor) by auth",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{yupi_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{yupi}}/api/coexecutor/appeals/indexByAuthUser?client_appeal_status_id=1cf63f67-fe81-45fc-97f0-d335251f66f7&appeal_status_id=36d72113-ecd0-481b-954b-c5f62d0357af&category_id=17fca7d8-47ce-4c98-abb6-ee3bb405a9db&type_id=93dedf07-4ae4-465c-9150-54d93c0370e1&co_executor_id=11&executor_id=13&distributor_id=10&from_date=2021-08-19 01:08:46&to_date=2021-08-19 01:08:47",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"coexecutor",
+								"appeals",
+								"indexByAuthUser"
+							],
+							"query": [
+								{
+									"key": "client_appeal_status_id",
+									"value": "1cf63f67-fe81-45fc-97f0-d335251f66f7"
+								},
+								{
+									"key": "appeal_status_id",
+									"value": "36d72113-ecd0-481b-954b-c5f62d0357af"
+								},
+								{
+									"key": "category_id",
+									"value": "17fca7d8-47ce-4c98-abb6-ee3bb405a9db"
+								},
+								{
+									"key": "type_id",
+									"value": "93dedf07-4ae4-465c-9150-54d93c0370e1"
+								},
+								{
+									"key": "co_executor_id",
+									"value": "11"
+								},
+								{
+									"key": "executor_id",
+									"value": "13"
+								},
+								{
+									"key": "distributor_id",
+									"value": "10"
+								},
+								{
+									"key": "from_date",
+									"value": "2021-08-19 01:08:46"
+								},
+								{
+									"key": "to_date",
+									"value": "2021-08-19 01:08:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List (distributor)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{yupi_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{yupi}}/api/distributor/appeals?from_date=2021-09-01 01:08:46&to_date=2021-10-19 01:08:47",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"distributor",
+								"appeals"
+							],
+							"query": [
+								{
+									"key": "client_appeal_status_id",
+									"value": "1cf63f67-fe81-45fc-97f0-d335251f66f7",
+									"disabled": true
+								},
+								{
+									"key": "appeal_status_id",
+									"value": "36d72113-ecd0-481b-954b-c5f62d0357af",
+									"disabled": true
+								},
+								{
+									"key": "category_id",
+									"value": "17fca7d8-47ce-4c98-abb6-ee3bb405a9db",
+									"disabled": true
+								},
+								{
+									"key": "type_id",
+									"value": "93dedf07-4ae4-465c-9150-54d93c0370e1",
+									"disabled": true
+								},
+								{
+									"key": "co_executor_id",
+									"value": "11",
+									"disabled": true
+								},
+								{
+									"key": "executor_id",
+									"value": "13",
+									"disabled": true
+								},
+								{
+									"key": "distributor_id",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "from_date",
+									"value": "2021-09-01 01:08:46"
+								},
+								{
+									"key": "to_date",
+									"value": "2021-10-19 01:08:47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List (distributor) by auth",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{yupi_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{yupi}}/api/distributor/appeals/indexByAuthUser?client_appeal_status_id=1cf63f67-fe81-45fc-97f0-d335251f66f7&appeal_status_id=36d72113-ecd0-481b-954b-c5f62d0357af&category_id=17fca7d8-47ce-4c98-abb6-ee3bb405a9db&type_id=93dedf07-4ae4-465c-9150-54d93c0370e1&co_executor_id=11&executor_id=13&distributor_id=10&from_date=2021-08-19 01:08:46&to_date=2021-08-19 01:08:47",
+							"host": [
+								"{{yupi}}"
+							],
+							"path": [
+								"api",
+								"distributor",
+								"appeals",
+								"indexByAuthUser"
+							],
+							"query": [
+								{
+									"key": "client_appeal_status_id",
+									"value": "1cf63f67-fe81-45fc-97f0-d335251f66f7"
+								},
+								{
+									"key": "appeal_status_id",
+									"value": "36d72113-ecd0-481b-954b-c5f62d0357af"
+								},
+								{
+									"key": "category_id",
+									"value": "17fca7d8-47ce-4c98-abb6-ee3bb405a9db"
+								},
+								{
+									"key": "type_id",
+									"value": "93dedf07-4ae4-465c-9150-54d93c0370e1"
+								},
+								{
+									"key": "co_executor_id",
+									"value": "11"
+								},
+								{
+									"key": "executor_id",
+									"value": "13"
+								},
+								{
+									"key": "distributor_id",
+									"value": "10"
+								},
+								{
+									"key": "from_date",
+									"value": "2021-08-19 01:08:46"
+								},
+								{
+									"key": "to_date",
+									"value": "2021-08-19 01:08:47"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "yupi",
+			"value": "http://127.0.0.1:8000"
+		}
+	]
+}

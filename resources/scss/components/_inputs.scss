@@ -1,0 +1,127 @@
+.input {
+  @include standard-radius;
+  border: none;
+  padding: 12px 25px;
+  color: $bold-dark;
+
+  &_lg {
+    padding: 18px 30px;
+  }
+
+  &:focus {
+    color: $bold-dark;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.opacity-primary {
+    @include bg-opacity($secondary-blue, 0.15);
+  }
+
+  &_line {
+    background-color: inherit;
+    border-radius: 0px;
+    border-bottom: 2px solid black;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 7px;
+
+    &.green {
+      border-color: $green;
+    }
+  }
+
+  &_icon-prepend {
+    padding-left: 50px;
+  }
+
+  &_icon-append {
+    padding-right: 50px;
+  }
+
+  &::placeholder {
+    color: $bold-dark;
+  }
+
+  &__icon {
+    font-size: var(--input-icon-font-size);
+    position: absolute;
+    left: 16px;
+    bottom: 12px;
+
+    &_append {
+      left: auto;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    &.font-md {
+      bottom: 14px;
+    }
+
+    &_lg {
+      left: 19px !important;
+      bottom: 20px !important;
+    }
+  }
+
+
+}
+
+
+.form-label {
+  &_line {
+    @include font-sm;
+    text-align: left;
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  &_icon-prepend {
+    padding-left: 50px;
+  }
+
+  &_icon-append {
+    padding-right: 50px;
+  }
+}
+
+.textarea {
+  @include standard-radius;
+  background-color: $grey-200;
+  border: 1px solid $grey-300;
+  padding: 20px 22px;
+
+  &:focus {
+    background-color: $grey-200;
+  }
+}
+
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-clip: content-box;
+  border: 1px solid $black;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+
+  &:checked:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: 3.5px;
+    height: 12px;
+    width: 12px;
+    top: 3px;
+    background-color: #6ca841;
+  }
+}
+
+.input-control-disabled {
+  background-color: #e9ecef;
+}

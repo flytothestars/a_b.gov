@@ -1,0 +1,19 @@
+.inner-report-header {
+  position: relative !important;
+  padding-left: 4em !important;
+
+  .v-expansion-panel-header__icon {
+    position: absolute;
+    left: 1em;
+  }
+}
+
+.report-government-icon {
+  width: 30px !important;
+  height: 30px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: white;
+}

@@ -1,0 +1,1972 @@
+﻿{
+  "ReportVersion": "2022.1.2.0",
+  "ReportGuid": "464b2c4f8e9d4594932138ecbb838c55",
+  "ReportName": "в",
+  "ReportAlias": "в",
+  "ReportCreated": "/Date(0+0600)/",
+  "ReportChanged": "/Date(1643084652168+0600)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "PreviewSettings": 268435455,
+  "Culture": "ru-RU",
+  "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class в : Stimulsoft.Report.StiReport\r\n    {\r\n        public в()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
+  "Styles": {
+    "0": {
+      "Ident": "StiTableStyle",
+      "Name": "Стиль2",
+      "BackColor": "White",
+      "DataColor": "191,191,191",
+      "DataForeground": "Black",
+      "SelectedDataForeground": "Black",
+      "AlternatingDataColor": "242,242,242",
+      "HeaderColor": "191,191,191",
+      "HeaderForeground": "Black",
+      "FooterColor": "180,35,159,217",
+      "FooterForeground": "White",
+      "GridColor": "White"
+    },
+    "1": {
+      "Ident": "StiChartStyle",
+      "Name": "Стиль1",
+      "Border": ";;;;;;;solid:Black",
+      "Brush": "gradient:255,255,255:192,195,202:",
+      "ChartAreaBrush": "solid:255,255,255",
+      "ChartAreaBorderColor": "Transparent",
+      "SeriesLabelsBrush": "solid:119,255,255,255",
+      "SeriesLabelsColor": "50,58,69",
+      "SeriesLabelsLineColor": "127,127,127",
+      "SeriesLabelsBorderColor": "Transparent",
+      "TrendLineColor": "127,127,127",
+      "LegendBrush": "solid:",
+      "LegendBorderColor": "Transparent",
+      "LegendTitleColor": "127,127,127",
+      "InterlacingHorBrush": "solid:10,133,144,152",
+      "InterlacingVertBrush": "solid:10,133,144,152",
+      "GridLinesHorColor": "50,105,105,105",
+      "GridLinesVertColor": "50,105,105,105",
+      "StyleColors": {
+        "0": "54,96,146",
+        "1": "80,131,191"
+      },
+      "BasicStyleColor": "White"
+    },
+    "2": {
+      "Ident": "StiChartStyle",
+      "Name": "Стиль1Copy1",
+      "Border": ";;;;;;;solid:Black",
+      "Brush": "gradient:255,255,255:192,195,202:",
+      "ChartAreaBrush": "solid:255,255,255",
+      "ChartAreaBorderColor": "Transparent",
+      "SeriesLabelsBrush": "empty",
+      "SeriesLabelsColor": "White",
+      "SeriesLabelsLineColor": "127,127,127",
+      "SeriesLabelsBorderColor": "Transparent",
+      "TrendLineColor": "127,127,127",
+      "LegendBrush": "solid:",
+      "LegendBorderColor": "Transparent",
+      "LegendTitleColor": "127,127,127",
+      "InterlacingHorBrush": "solid:10,133,144,152",
+      "InterlacingVertBrush": "solid:10,133,144,152",
+      "GridLinesHorColor": "50,105,105,105",
+      "GridLinesVertColor": "50,105,105,105",
+      "StyleColors": {
+        "0": "54,96,146",
+        "1": "80,131,191"
+      },
+      "BasicStyleColor": "White"
+    }
+  },
+  "ReferencedAssemblies": {
+    "0": "System.Dll",
+    "1": "System.Drawing.Dll",
+    "2": "System.Windows.Forms.Dll",
+    "3": "System.Data.Dll",
+    "4": "System.Xml.Dll",
+    "5": "Stimulsoft.Controls.Dll",
+    "6": "Stimulsoft.Base.Dll",
+    "7": "Stimulsoft.Report.Dll"
+  },
+  "Dictionary": {
+    "Resources": {
+      "0": {
+        "Name": "Torgovlya",
+        "Alias": "Torgovlya",
+        "Type": "Xml",
+        "Image": "Ue34julbozDdjMYFZlGUuoQ7Z8mSf8tXDeEgEGuTsy1BEpc9O9n2sZ75ilFx+l9mIRaMyyE3zHxRF/g+tVtzPpo+iOp9er86c702jYc+x9+OoA3PNSrVMNBoKPOnmiSzM5/eWzxWYAdW0zXP1G3teFnUfgJaitv9v22/O2TTpkJ2TBT3BdKOeqyhLbQ02qy4bYctPbywqqUbOfaXJWRwdys8K0SZiYUyGmLGBhFhF9FwkBuaru2bzdzAkDWM8Myyvy5j8+bf3LHgvFSt7qr4uRIb8tjVStz20p26JxIY++6XDkFp2c79W7PS5/6ojhWiYIUkB7/WD+CJTNx/m1r5EX3B3AP4VodFr7O72iMqWooOFUW22FuOShoh4EG7AMdm764EAkIVvxVzGGJ8Naswg9ri/308w6wBYSZD59sh5AiFuTwaUNy3sFkqpromhXoTb8Sob9o7OZl7W6O0J5cII1NO+Pw7rNHCdVopdaO9QDLuEKIQBQg1Qz7lg1naQUYBUuOc3JTa/MZ85naVMW39rRIBhvzzsl0IKtwjNonea5zP/GR+1Z1phFEIW8nByVySRo9ax54VVwDDJXE7Wka9ax2WS110dBbyLIrWhTh2W84Ne8bLX9Z1CThC6VzWmgWLQY6r87KMm1Gk8f3064r5ONXp+8hx57WrdLvE7Ri6xyPkuamTqGHmZA7osvU+QESnvuSuiwmhdIwop+keJmVmumv9HAUNSUocbebKfAm8cKgD05/bY67cI6jgI+tfwGmsfHLzBHBA1Rox/nEQ8s39jQgVWqD+FhRuFdGG8U9wC+qtzZaqOCnaFSRUrAVQ6v0/UTmhUbca31NfInFNbHomG6Sm+QcW/5if/b23A5FCnrl+Lw4x3wWyscgCnpurNQ79YfyAlDvdcvBxRuI2wHCZaZeD54FH+37W2nQkrsGXzoO2zTUS8aJN5vZ47NEGCvKtaptgfL48GcgiH699EqC23oX5+xY/0IdZgNHZfCo11cLYDZW0ITqfYERQy9TKNF6cq5xOxe2Z9N2U2hwG1BvHW1mE5Zf6tqiv8KUr7UThPbwawfU8OQAJEG4vf5eMeeaNAfRA2oFT4do59oQ5y/pCZSV8wHPPsC2wHQ5yqFuTTdCCjHYf20/nzcGd9e25OHzrMxJe9tXuqwpTyeG+oARINpQ4REexKWWJvsXW/X/A8wuiDCNxnkkskX92vdDvQu3V73PL6AhXUM10I09nA+vdpDg48F4vIApZ+M4dAcFELlWOexqv3ZibKTZlaljW3arZi+LBaSqQ+YoeSWiKgL4vnNJ/rnBfIESONesVw7E2KopC1kWSnn2NBYi+OzcV4/t+TUuT8rX/zxp4A4Eu8MCBRzKGue+6RFvaHnZLKWzosYqcPxKSawftzvsi1ZHd3iGeBYz9OJlpXTbBATrJz23RKceBWBrknu3JoKca6lRxixhGINDbqY+N4yiPwV8Jyd2k6ul+ODKEzajpuZ7/0mVD4iqOsE36BXbWGii4RBZQ63ildpj0hwx8bc358yWVQRUUJHcNkKvy70dOJ1LH/BeeRQ0gpJW5JsoECR8iafkMpTaUu+xxIYjiANOx4bA8cTRUcZ07XFlrRwTOKzJo9uDLpaDSBuXWbcdXhfCPWK2RdpdWo49CobVf9d636D7/mwusgojoEgHz23IXnDXL0Oh/XV0qAOHXw5SUPayf7grQdBajAeCQS3DTibovwkbEHGGVKllFqjheuTOZy/XaQjZ8Ha1GDCy0FAj4w9VoGHXOMvvR2sl/ErQlMYjT3nsk9g78XKuWPb7VLc90YcMibLHdgwfD8aTKTblcW0nhREjFc++kHRC1e5l+n1taPSa5UFQCQOWrOJd3FnjrC4SEKoCeRmo6fc5AqLIcMsMaW4Bx/+Vc7WHFKaWxsAl9uWKCvL62Cng6/1iM4X2N7J01+3YkJili2prEoutT45H6h7ClP2sgKlCiRcevC5AR+aCLiPc/njSlBoj62lPODYSpYaG5kbbs2aGz1NPLKIDhEtdYTf/UqpV2gXQjssftNxbiqM7L3HpB2iKs3eG5aDQaDano6Vl0NoLCRonTrkKeMVzO0gRc+l1b/UfsX5DcOi6dAHyYlLcTTIbmB7CiQEaiW3oMGHe5mzKAKwKUPo/0c77wCUizEvo="
+      }
+    },
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "month",
+        "Alias": "month",
+        "Key": "a9162c8fc2c947c48e2106dab6bea677",
+        "Columns": {
+          "0": {
+            "Name": "enterpriseNumber",
+            "Index": -1,
+            "NameInSource": "enterpriseNumber",
+            "Alias": "enterpriseNumber",
+            "Type": "System.Decimal",
+            "Key": "e76502c5491a428a8d0566da069a6aa5"
+          },
+          "1": {
+            "Name": "employedCount",
+            "Index": -1,
+            "NameInSource": "employedCount",
+            "Alias": "employedCount",
+            "Type": "System.Decimal",
+            "Key": "c83b188cc6044edfbd23a55d987fca6e"
+          },
+          "2": {
+            "Name": "averageSalary",
+            "Index": -1,
+            "NameInSource": "averageSalary",
+            "Alias": "averageSalary",
+            "Type": "System.Decimal",
+            "Key": "3dd1fd537d8e478ca4f14d3cb860ba62"
+          },
+          "3": {
+            "Name": "tax",
+            "Index": -1,
+            "NameInSource": "tax",
+            "Alias": "tax",
+            "Type": "System.Decimal",
+            "Key": "501f5357b78a4d9c91d8cdfa7f009d88"
+          },
+          "4": {
+            "Name": "tradeWholesaleTurnover",
+            "Index": -1,
+            "NameInSource": "tradeWholesaleTurnover",
+            "Alias": "tradeWholesaleTurnover",
+            "Type": "System.Decimal",
+            "Key": "14795565b8b142048e8c1e8ae6972842"
+          },
+          "5": {
+            "Name": "tradeWholesalePhysicalVolumeIndex",
+            "Index": -1,
+            "NameInSource": "tradeWholesalePhysicalVolumeIndex",
+            "Alias": "tradeWholesalePhysicalVolumeIndex",
+            "Type": "System.Decimal",
+            "Key": "887a86d8a4fc4e09a3d445f64d57448a"
+          },
+          "6": {
+            "Name": "tradeRetailTurnover",
+            "Index": -1,
+            "NameInSource": "tradeRetailTurnover",
+            "Alias": "tradeRetailTurnover",
+            "Type": "System.Decimal",
+            "Key": "7addb5c4fc644524b04eeb4fe0b665ff"
+          },
+          "7": {
+            "Name": "tradeRetailPhysicalVolumeIndex",
+            "Index": -1,
+            "NameInSource": "tradeRetailPhysicalVolumeIndex",
+            "Alias": "tradeRetailPhysicalVolumeIndex",
+            "Type": "System.Decimal",
+            "Key": "aa9e28b0a6c1419faaf405c9657d3b32"
+          },
+          "8": {
+            "Name": "tradeWholesaleStructure",
+            "Index": -1,
+            "NameInSource": "tradeWholesaleStructure",
+            "Alias": "tradeWholesaleStructure",
+            "Type": "System.String",
+            "Key": "4075be77093841c38898c135e3125565"
+          },
+          "9": {
+            "Name": "tradeWholesaleTurnoverByDistrict",
+            "Index": -1,
+            "NameInSource": "tradeWholesaleTurnoverByDistrict",
+            "Alias": "tradeWholesaleTurnoverByDistrict",
+            "Type": "System.String",
+            "Key": "2aa6a5ef87c7424d8ed5ebb1a8a8572d"
+          },
+          "10": {
+            "Name": "tradeRetailStructure",
+            "Index": -1,
+            "NameInSource": "tradeRetailStructure",
+            "Alias": "tradeRetailStructure",
+            "Type": "System.String",
+            "Key": "3290e217074243139d5952072e421ca1"
+          },
+          "11": {
+            "Name": "tradeRetailTurnoverByDistrict",
+            "Index": -1,
+            "NameInSource": "tradeRetailTurnoverByDistrict",
+            "Alias": "tradeRetailTurnoverByDistrict",
+            "Type": "System.String",
+            "Key": "ac7303d05ff7408ebbcdf2bf599fc41f"
+          }
+        },
+        "NameInSource": "trade-example.month"
+      },
+      "1": {
+        "Ident": "StiDataTableSource",
+        "Name": "month_tradeRetailStructure",
+        "Alias": "month_tradeRetailStructure",
+        "Key": "9fdd1e9fe671494292cdb097456894ea",
+        "Columns": {
+          "0": {
+            "Name": "value",
+            "Index": -1,
+            "NameInSource": "value",
+            "Alias": "value",
+            "Type": "System.Decimal",
+            "Key": "c723f8cfcb424c33be9f538ca425cfc4"
+          },
+          "1": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String",
+            "Key": "b79abc98542b406fb47b83da74abdbca"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String",
+            "Key": "0071dbd0d1594520a8d07ff3d3525921"
+          }
+        },
+        "NameInSource": "trade-example.month_tradeRetailStructure"
+      },
+      "2": {
+        "Ident": "StiDataTableSource",
+        "Name": "month_tradeRetailTurnoverByDistrict",
+        "Alias": "month_tradeRetailTurnoverByDistrict",
+        "Key": "fa7a1d4d85bc470bb8c948c4c60d066d",
+        "Columns": {
+          "0": {
+            "Name": "value",
+            "Index": -1,
+            "NameInSource": "value",
+            "Alias": "value",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "trade-example.month_tradeRetailTurnoverByDistrict"
+      },
+      "3": {
+        "Ident": "StiDataTableSource",
+        "Name": "month_tradeWholesaleStructure",
+        "Alias": "month_tradeWholesaleStructure",
+        "Key": "1b416715034d40bcb2fea59ea01cdc25",
+        "Columns": {
+          "0": {
+            "Name": "value",
+            "Index": -1,
+            "NameInSource": "value",
+            "Alias": "value",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "trade-example.month_tradeWholesaleStructure"
+      },
+      "4": {
+        "Ident": "StiDataTableSource",
+        "Name": "month_tradeWholesaleTurnoverByDistrict",
+        "Alias": "month_tradeWholesaleTurnoverByDistrict",
+        "Key": "7ca83a1c34f04961aafe3180ae7fd49a",
+        "Columns": {
+          "0": {
+            "Name": "value",
+            "Index": -1,
+            "NameInSource": "value",
+            "Alias": "value",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "trade-example.month_tradeWholesaleTurnoverByDistrict"
+      },
+      "5": {
+        "Ident": "StiDataTableSource",
+        "Name": "years",
+        "Alias": "years",
+        "Key": "5812c4c82bb2470782d4c5a149d0fc29",
+        "Columns": {
+          "0": {
+            "Name": "year",
+            "Index": -1,
+            "NameInSource": "year",
+            "Alias": "year",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "retail_value",
+            "Index": -1,
+            "NameInSource": "retail_value",
+            "Alias": "retail_value",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "whole_value",
+            "Index": -1,
+            "NameInSource": "whole_value",
+            "Alias": "whole_value",
+            "Type": "System.Decimal"
+          }
+        },
+        "NameInSource": "trade-example.years"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiJsonDatabase",
+        "Name": "trade-example",
+        "Alias": "trade-example",
+        "Key": "a0bd60bb573847f4bcd8f1c2b2d6e8d1",
+        "PathData": "C:\\Users\\Daniyar\\Downloads\\trade-example.json"
+      }
+    },
+    "Relations": {
+      "0": {
+        "Name": "month",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "tradeRetailStructure"
+        },
+        "NameInSource": "month_tradeRetailStructure",
+        "Alias": "month",
+        "Key": "d20764343cdd461dbc18a7b8ec46e978",
+        "ParentSource": "month",
+        "ChildSource": "month_tradeRetailStructure"
+      },
+      "1": {
+        "Name": "month",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "tradeRetailTurnoverByDistrict"
+        },
+        "NameInSource": "month_tradeRetailTurnoverByDistrict",
+        "Alias": "month",
+        "Key": "ea69dea88d944c36a1c649a52bf8ca04",
+        "ParentSource": "month",
+        "ChildSource": "month_tradeRetailTurnoverByDistrict"
+      },
+      "2": {
+        "Name": "month",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "tradeWholesaleStructure"
+        },
+        "NameInSource": "month_tradeWholesaleStructure",
+        "Alias": "month",
+        "Key": "1250101d0a33408aa916a9b03bf9c9e4",
+        "ParentSource": "month",
+        "ChildSource": "month_tradeWholesaleStructure"
+      },
+      "3": {
+        "Name": "month",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "tradeWholesaleTurnoverByDistrict"
+        },
+        "NameInSource": "month_tradeWholesaleTurnoverByDistrict",
+        "Alias": "month",
+        "Key": "62440a0b51714d398008798ef24303b6",
+        "ParentSource": "month",
+        "ChildSource": "month_tradeWholesaleTurnoverByDistrict"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiDashboard",
+      "Name": "Dashboard1",
+      "Guid": "2c4e4467135b4473829f57bf5b651a53",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator1",
+          "Guid": "fbb566b1b1634b1287552c14b34f17a9",
+          "ClientRectangle": "0,80,760,200",
+          "Padding": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "Border": ";Black;;Double;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiCustomFormatService",
+            "StringFormat": "#,#"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "7e4366a8a1c740d5a923d25bf3218a8e",
+            "Expression": "Count(root.sum)",
+            "Label": "sum"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false,
+            "Font": ";1.25;Bold;"
+          },
+          "Font": "Segoe UI;30;;",
+          "Icon": "Money",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "69,98,135",
+              "Icon": "Archive",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "1": {
+          "Ident": "StiTextElement",
+          "Name": "Text2",
+          "Guid": "e15450d948be47bda56a85967d00b9a4",
+          "ClientRectangle": "600,280,600,120",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Структура оптовой торговли по видам товаров<br />\r\n</b></font-color>Тенге</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "2": {
+          "Ident": "StiTextElement",
+          "Name": "Text8",
+          "Guid": "cc96a7ce1e9e479d870babe555b58129",
+          "ClientRectangle": "0,0,760,100",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Количество предприятий<br />\r\n</b></font-color>Единиц</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "3": {
+          "Ident": "StiTextElement",
+          "Name": "Text5",
+          "Guid": "af4ee0a1ce3e48f680468bcd59e7a578",
+          "ClientRectangle": "1200,280,600,120",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">ИФО оптовой торговли</font-color></b></text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "4": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator2",
+          "Guid": "91f455216fa24e498afc54d300031f8b",
+          "ClientRectangle": "760,80,760,200",
+          "Padding": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "Border": ";Black;;Double;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiCustomFormatService",
+            "StringFormat": "#,#"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "1c49dd846854478fa00c40ad319765cd",
+            "Expression": "Sum(root.work_place)",
+            "Label": "work_place"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false,
+            "Font": ";1.25;Bold;"
+          },
+          "Font": "Segoe UI;30;;",
+          "Icon": "Money",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "69,98,135",
+              "Icon": "User",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "5": {
+          "Ident": "StiTextElement",
+          "Name": "Text1",
+          "Guid": "a6c75e65e01c4b7982a54d07c601faef",
+          "ClientRectangle": "760,0,760,100",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Численность занятых<br />\r\n</b></font-color>Человек</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "6": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator3",
+          "Guid": "26ef0ecec0164a3aa4ad60cb7e8cf80b",
+          "ClientRectangle": "1520,80,760,200",
+          "Padding": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "Border": ";Black;;Double;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "GroupSeparator": " ",
+            "State": "CurrencySymbol",
+            "PositivePattern": 3,
+            "Symbol": "₸"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "3cb54c04a78d4dc8965f16602f714a17",
+            "Expression": "Sum(root.salary)/Count(root.work_place)",
+            "Label": "salary"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false,
+            "Font": ";1.25;Bold;"
+          },
+          "Font": "Segoe UI;30;;",
+          "Icon": "Money",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "69,98,135",
+              "Icon": "Money",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "7": {
+          "Ident": "StiTextElement",
+          "Name": "Text4",
+          "Guid": "9586a844e37741ef9b637be8feddd2dd",
+          "ClientRectangle": "1520,0,760,100",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Средняя зарплата <br />\r\n</b></font-color>Тенге</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "8": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator4",
+          "Guid": "4ad321b5d0c24b75b134482ad7aeb68b",
+          "ClientRectangle": "2280,80,740,200",
+          "Padding": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "Border": ";Black;;Double;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, CurrencySymbol, Abbreviation",
+            "PositivePattern": 3,
+            "Symbol": "₸"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "9a5eb814aca14c2cbb69b096cc464d89",
+            "Expression": "Sum(root.tax)",
+            "Label": "tax"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false,
+            "Font": ";1.25;Bold;"
+          },
+          "Font": "Segoe UI;30;;",
+          "Icon": "Money",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "69,98,135",
+              "Icon": "Money",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "9": {
+          "Ident": "StiTextElement",
+          "Name": "Text7",
+          "Guid": "dc0a6cdc2db64f06a314264a400e4382",
+          "ClientRectangle": "2280,0,740,100",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Налоговые поступления<br />\r\n</b></font-color>Тенге</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "10": {
+          "Ident": "StiTextElement",
+          "Name": "Text11",
+          "Guid": "05049f3d3ea248218609330e88f7ee53",
+          "ClientRectangle": "1200,840,600,120",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">ИФО розничной торговли</font-color></b></text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "11": {
+          "Ident": "StiTextElement",
+          "Name": "Text12",
+          "Guid": "ac42aae930e54ad69896ba9cc6f6600f",
+          "ClientRectangle": "0,280,600,120",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Товарооборот оптовой торговли<br />\r\n</b></font-color>Тенге</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "12": {
+          "Ident": "StiTextElement",
+          "Name": "Text13",
+          "Guid": "8127ed379e654ce58699bfcf6cfb9e6f",
+          "ClientRectangle": "0,840,600,120",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Товарооборот розничной торговли<br />\r\n</b></font-color>Тенге</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "13": {
+          "Ident": "StiTextElement",
+          "Name": "Text14",
+          "Guid": "40e3350df7e54e3c835b046e70d1da2f",
+          "ClientRectangle": "1800,280,600,120",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Динамика оборотов оптовой торговли<br />\r\n</b></font-color>Тенге</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "14": {
+          "Ident": "StiTextElement",
+          "Name": "Text15",
+          "Guid": "1f0a4f143fec4d3a999afb83226d3ffa",
+          "ClientRectangle": "2400,280,620,120",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Товарооборот оптовой торговли по районам <br />\r\n</b></font-color>Тенге</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "15": {
+          "Ident": "StiTextElement",
+          "Name": "Text6",
+          "Guid": "f24616dfaec64c208c3ea263917f4e1c",
+          "ClientRectangle": "600,840,600,120",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Структура розничной торговли по видам товаров<br />\r\n</b></font-color>Тенге</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "16": {
+          "Ident": "StiTextElement",
+          "Name": "Text3",
+          "Guid": "7b7eb49cdf8f45db92feecccabbcbe35",
+          "ClientRectangle": "1800,840,600,120",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Динамика оборотов розничной торговли<br />\r\n</b></font-color>Тенге</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "17": {
+          "Ident": "StiTextElement",
+          "Name": "Text9",
+          "Guid": "b55931fee03747a08b1cb561790ee34d",
+          "ClientRectangle": "2400,840,620,120",
+          "Border": ";Black;2;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0,
+            "Top": 3.0,
+            "Right": 3.0,
+            "Bottom": 3.0
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"10\"><text-align=\"Left\"><b><font-color=\"Black\">Товарооборот розничной торговли по районам <br />\r\n</b></font-color>Тенге</text-align></font>",
+          "VertAlignment": "Top",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Текст",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "18": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator9",
+          "Guid": "624f96cf121f490ca720f2da56e032b5",
+          "ClientRectangle": "0,80,760,200",
+          "Padding": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "Border": ";Black;;Double;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, CurrencySymbol",
+            "PositivePattern": 3,
+            "Symbol": ""
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "90bfdec75b534111a37ebf12ca58d281",
+            "Expression": "Sum(month.enterpriseNumber)",
+            "Label": "enterpriseNumber"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false,
+            "Font": ";1.25;Bold;"
+          },
+          "Font": "Segoe UI;28;;",
+          "Icon": "Money",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "69,98,135",
+              "Icon": "Archive",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "19": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator10",
+          "Guid": "17787bc239914876a35716e1a87bd693",
+          "ClientRectangle": "760,80,760,200",
+          "Padding": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "Border": ";Black;;Double;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, CurrencySymbol",
+            "PositivePattern": 3,
+            "Symbol": ""
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "ee32406f0217451b8b46e32ab0c25571",
+            "Expression": "Sum(month.employedCount)",
+            "Label": "employedCount"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false,
+            "Font": ";1.25;Bold;"
+          },
+          "Font": "Segoe UI;28;;",
+          "Icon": "Money",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "69,98,135",
+              "Icon": "User",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "20": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator11",
+          "Guid": "b60024e531734d91b62cc2f5993fe1e5",
+          "ClientRectangle": "1520,80,760,200",
+          "Padding": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "Border": ";Black;;Double;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, CurrencySymbol",
+            "PositivePattern": 3,
+            "Symbol": "₸"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "a8ce259c6d5f49fd9d538416d88fdaa3",
+            "Expression": "Sum(month.averageSalary)",
+            "Label": "averageSalary"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false,
+            "Font": ";1.25;Bold;"
+          },
+          "Font": "Segoe UI;28;;",
+          "Icon": "Money",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "69,98,135",
+              "Icon": "Money",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "21": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator12",
+          "Guid": "a2d6b6cd6453497084c449d8702f8e95",
+          "ClientRectangle": "2280,80,740,200",
+          "Padding": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "Border": ";Black;;Double;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, CurrencySymbol, Abbreviation",
+            "PositivePattern": 3,
+            "Symbol": "₸"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "8270d297e6164ea28766b7343c7cb26d",
+            "Expression": "Sum(month.tax)",
+            "Label": "tax"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false,
+            "Font": ";1.25;Bold;"
+          },
+          "Font": "Segoe UI;28;;",
+          "Icon": "Money",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "69,98,135",
+              "Icon": "Money",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "22": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator8",
+          "Guid": "1fc2cfe63ad14bf1bf20326a24450889",
+          "ClientRectangle": "0,940,600,480",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 1,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "bdcda02193c24d64b37e9dc4373d27eb",
+            "Expression": "Sum(month.tradeRetailTurnover)",
+            "Label": "tradeRetailTurnover"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false
+          },
+          "Font": "Segoe UI;28;;",
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "69,98,135",
+              "Icon": "Money",
+              "CustomIcon": "iVBORw0KGgoAAAANSUhEUgAAACUAAAAyCAYAAADbTRIgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABqSURBVFhH7dExCsAwEMTA+/+nnTxgC4ExGxMNbHOFEXhe64OLx/bisb14bC8e29Pd0p+2F4/txWN78dhePLa37ciju4yijKKMooyijKKMooyijKKMooyijKKMooyijKKMooyijKL+EDXzAOJ9KPQHuRmiAAAAAElFTkSuQmCC",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "23": {
+          "Ident": "StiChartElement",
+          "Name": "Chart7",
+          "Guid": "80b56f107c7e4f1d854fe5223fa7c625",
+          "ClientRectangle": "600,360,600,480",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "d8569e760d2849ab9d22ec60fc1b12bd",
+              "Expression": "Sum(month_tradeWholesaleStructure.value)",
+              "Label": "value",
+              "SeriesType": "Doughnut"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "77340c7310e74bbcae6e5e16c4c9b036",
+              "Expression": "month_tradeWholesaleStructure.name",
+              "Label": "name"
+            }
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "Диаграмма",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "ee2aeb947abf440291f1599e0df89b52"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "Legend": {
+            "Visibility": "False"
+          },
+          "Area": {
+            "GridLinesHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Font": ";7;Bold;",
+            "Position": "Center",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1Copy1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "24": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator5",
+          "Guid": "954de60c057b4d6c85a4210d8ae3adcd",
+          "ClientRectangle": "1200,360,600,480",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 1,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, CurrencySymbol",
+            "PositivePattern": 3,
+            "Symbol": "%"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "5824d0903f2b4f79a21a529f5f78584d",
+            "Expression": "Sum(month.tradeWholesalePhysicalVolumeIndex)",
+            "Label": "tradeWholesalePhysicalVolumeIndex"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false
+          },
+          "Font": "Segoe UI;28;;",
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "117,140,72",
+              "Icon": "LongArrowUp",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "25": {
+          "Ident": "StiChartElement",
+          "Name": "Chart3",
+          "Guid": "695cb0cfbdcd4f4aba77775f4a36a617",
+          "ClientRectangle": "1800,360,600,480",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "c9da511d76674e1a99cf0099b177ee5e",
+              "Expression": "Sum(years.whole_value)",
+              "Label": "whole_value"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "576c7b461a7246ea9e8ed6151d8b1b7b",
+              "Expression": "years.year",
+              "Label": "year"
+            }
+          },
+          "TopN": {
+            "Mode": "Top",
+            "ShowOthers": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "Диаграмма",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "7d2ce956b5f14811a73512a989a77386"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 1,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "XAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "YAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "Area": {
+            "ColorEach": true,
+            "GridLinesHor": {
+              "Visible": true
+            },
+            "InterlacingHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Position": "OutsideEnd",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "26": {
+          "Ident": "StiChartElement",
+          "Name": "Chart2",
+          "Guid": "174d7a90a9af490cae9a02a0a0ef1a5e",
+          "ClientRectangle": "2400,360,620,480",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "13b9c6c746234490b8b5ceab1a31d6c9",
+              "Expression": "Sum(month_tradeWholesaleTurnoverByDistrict.value)",
+              "Label": "value",
+              "SeriesType": "ClusteredBar"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "690fec025c454641ad249bda1b2ebb39",
+              "Expression": "month_tradeWholesaleTurnoverByDistrict.name",
+              "Label": "name"
+            }
+          },
+          "TopN": {
+            "Mode": "Top",
+            "Count": 8,
+            "ShowOthers": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "Диаграмма",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "258ac250adce4f56b2bcdc15888fc6a1"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "XAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "YAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "Area": {
+            "ColorEach": true,
+            "GridLinesHor": {
+              "Visible": true
+            },
+            "InterlacingHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Position": "OutsideEnd",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "27": {
+          "Ident": "StiChartElement",
+          "Name": "Chart4",
+          "Guid": "76a3b9a6a9fd4791bf6127d301d88d16",
+          "ClientRectangle": "600,940,600,480",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "d0786ff3cb8f4158ada35f104ae08ae2",
+              "Expression": "Sum(month_tradeRetailStructure.value)",
+              "Label": "value",
+              "SeriesType": "Doughnut"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "163574aad99547788709e5ecf457de8e",
+              "Expression": "month_tradeRetailStructure.name",
+              "Label": "name"
+            }
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "Диаграмма",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "50c31b9522cf4f258173de521c515da3"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "Legend": {
+            "Visibility": "False"
+          },
+          "Area": {
+            "GridLinesHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Font": ";7;Bold;",
+            "Position": "Center",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1Copy1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "28": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator6",
+          "Guid": "989f2e77363b444fb1c55c910b418964",
+          "ClientRectangle": "1200,940,600,480",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiCurrencyFormatService",
+            "NegativePattern": 8,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 1,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, CurrencySymbol",
+            "PositivePattern": 3,
+            "Symbol": "%"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "7c882a4433864780bc89ff68d1e021e0",
+            "Expression": "Sum(month.tradeRetailPhysicalVolumeIndex)",
+            "Label": "tradeRetailPhysicalVolumeIndex"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false
+          },
+          "Font": "Segoe UI;28;;",
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "LessThan",
+              "Value": "100",
+              "IconColor": "186,20,25",
+              "Icon": "LongArrowDown",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            },
+            "1": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "GreaterThanOrEqualTo",
+              "Value": "100",
+              "IconColor": "117,140,72",
+              "Icon": "LongArrowUp",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "IconAlignment": "Left",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "29": {
+          "Ident": "StiChartElement",
+          "Name": "Chart1",
+          "Guid": "47683eabff164b0abf8cd696a9799a98",
+          "ClientRectangle": "1800,940,600,480",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "2a7aff51ee6941fb8776852081eecb95",
+              "Expression": "Sum(years.retail_value)",
+              "Label": "retail_value"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "ea4442d65c6c45f8951c4d1835ac4761",
+              "Expression": "years.year",
+              "Label": "year"
+            }
+          },
+          "TopN": {
+            "Mode": "Top",
+            "Count": 3,
+            "ShowOthers": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "Диаграмма",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "34b81c7f87b340c892adef3689fe38bb"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 1,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "XAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "YAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "Area": {
+            "ColorEach": true,
+            "GridLinesHor": {
+              "Visible": true
+            },
+            "InterlacingHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Position": "OutsideEnd",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "30": {
+          "Ident": "StiChartElement",
+          "Name": "Chart5",
+          "Guid": "1e99224ddd3a4d99a664fd9a4de3c906",
+          "ClientRectangle": "2400,940,620,480",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "7700e5d3cf2d4eae818075b11391977e",
+              "Expression": "Sum(month_tradeRetailTurnoverByDistrict.value)",
+              "Label": "value",
+              "SeriesType": "ClusteredBar"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "6dfc29d4be6a4400aff0997f1578a62e",
+              "Expression": "month_tradeRetailTurnoverByDistrict.name",
+              "Label": "name"
+            }
+          },
+          "TopN": {
+            "Mode": "Top",
+            "Count": 8,
+            "ShowOthers": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "Диаграмма",
+            "Visible": false
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "bfd9022c7b634a96990e6fa9ccc440cf"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalSeparator": ",",
+            "DecimalDigits": 0,
+            "GroupSeparator": " ",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "XAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "YAxis": {
+            "Title": {
+              "Visible": false
+            }
+          },
+          "Area": {
+            "ColorEach": true,
+            "GridLinesHor": {
+              "Visible": true
+            },
+            "InterlacingHor": {
+              "Visible": true
+            }
+          },
+          "Labels": {
+            "Position": "OutsideEnd",
+            "Style": "Value"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "Style": "Custom",
+          "CustomStyleName": "Стиль1",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "31": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator13",
+          "Guid": "83a6729cb641455286fe7d7ba0989c8f",
+          "ClientRectangle": "0,360,600,480",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 1,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "6a6f9d67f33848aaaf007a9a535a3cb9",
+            "Expression": "Sum(month.tradeWholesaleTurnover)",
+            "Label": "tradeWholesaleTurnover"
+          },
+          "Title": {
+            "Text": "Индикатор",
+            "Visible": false
+          },
+          "Font": "Segoe UI;28;;",
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ",
+          "FontSizeMode": "Value",
+          "IndicatorConditions": {
+            "0": {
+              "Ident": "StiIndicatorElementCondition",
+              "Condition": "NotEqualTo",
+              "Value": "-1",
+              "IconColor": "69,98,135",
+              "Icon": "Money",
+              "CustomIcon": "iVBORw0KGgoAAAANSUhEUgAAACUAAAAyCAYAAADbTRIgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABqSURBVFhH7dExCsAwEMTA+/+nnTxgC4ExGxMNbHOFEXhe64OLx/bisb14bC8e29Pd0p+2F4/txWN78dhePLa37ciju4yijKKMooyijKKMooyijKKMooyijKKMooyijKKMooyijKL+EDXzAOJ9KPQHuRmiAAAAAElFTkSuQmCC",
+              "Permissions": "Font, FontSize, FontStyleBold, FontStyleItalic, FontStyleUnderline, FontStyleStrikeout, TextColor, BackColor, Icon, TargetIcon",
+              "TargetIconAlignment": "None"
+            }
+          },
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        }
+      },
+      "Width": 3020.0,
+      "Height": 1423.0,
+      "Border": ";;2;;;;;solid:Black"
+    }
+  }
+}

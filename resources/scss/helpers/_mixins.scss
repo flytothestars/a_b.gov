@@ -1,0 +1,65 @@
+@mixin standard-shadow {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+@mixin img-shadow {
+    box-shadow: 5px 35px 50px rgb(0 0 0 / 40%);
+}
+
+@mixin standard-radius {
+    border-radius: 8px;
+}
+
+@mixin radius-sm {
+    border-radius: 5px;
+}
+
+@mixin standard-font {
+    font-family: var(--font-regular);
+    font-size: var(--text-base-size);
+}
+
+@mixin font-md {
+    font-family: var(--font-regular);
+    font-size: var(--text-md);
+}
+
+@mixin font-sm {
+    font-family: var(--font-regular);
+    font-size: var(--text-sm);
+}
+
+@mixin bold-font {
+    font-family: var(--font-bold);
+    font-size: var(--text-base-size);
+}
+
+@mixin bold-font-md {
+    font-family: var(--font-bold);
+    font-size: var(--text-md);
+}
+
+@mixin bold-font-lg {
+    font-family: var(--font-extra-bold);
+    font-size: var(--text-lg);
+}
+
+@mixin bold-font-xl {
+    font-family: var(--font-extra-bold);
+    font-size: var(--text-xl);
+}
+
+@mixin bold-font-xxl {
+    font-family: var(--font-extra-bold);
+    font-size: var(--text-xxl);
+}
+
+@mixin bold-font-xxxl {
+    font-family: var(--font-extra-bold);
+    font-size: var(--text-xxxl);
+}
+
+@mixin bg-opacity($color, $opacity) {
+    background: $color;
+    background: rgba($color, $opacity) !important;
+}
